@@ -1,0 +1,55 @@
+name: Build Debian Package
+description: |
+  Builds the debian package represented by this repo at the ref pointed by the debain-ref argument.
+
+on:
+  workflow_dispatch:
+    inputs:
+
+      debian-ref:
+        description: The debian ref to build. For example branch "debian/latest" or tag "debian/1.0.0-1"
+        type: string
+        required: true
+        default: debian/latest
+
+      distro-codename:
+        description: The distribution codename to build for. Ex noble, questing, etc
+        type: choice
+        default: noble
+        options:
+          - noble
+          - questing
+
+      abi-checker:
+        description: Run the ABI checker or not
+        type: boolean
+        default: false
+
+      push-to-repo:
+        description: Push to repository upon successful build
+        type: boolean
+        default: false
+
+      builder_runner:
+        type: choice
+        default: ubuntu-latest
+        options:
+          - ubuntu-latest
+          - lecore-prd-u2404-arm64-xlrg-od-ephem
+
+permissions:
+ contents: read
+ security-events: write
+
+jobs:
+  build:
+    uses: qualcomm-linux/qcom-build-utils/.github/workflows/qcom-build-pkg-reusable-workflow.yml@main
+    with:
+      qcom-build-utils-ref: main
+      debian-ref: ${{ inputs.debian-ref }}
+      distro-codename: ${{ inputs.distro-codename }}
+      run-abi-checker: ${{ inputs.abi-checker }}
+      push-to-repo: ${{ inputs.push-to-repo }}
+      runner: ${{inputs.builder_runner}}
+    secrets:
+      TOKEN: ${{ secrets.DEB_PKG_BOT_CI_TOKEN }}

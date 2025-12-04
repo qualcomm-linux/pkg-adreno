@@ -1,0 +1,25 @@
+name: Promote New Upstream Version
+
+on:
+  workflow_dispatch:
+    inputs:
+
+      upstream-tag:
+        description: The upstream tag to promote this package repo to. Eg, v1.1.0 or 1.2.0, depending on the versioning style
+        type: string
+        required: true
+
+permissions:
+ contents: write
+ pull-requests: write
+
+jobs:
+  promote:
+
+    uses: qualcomm-linux/qcom-build-utils/.github/workflows/qcom-promote-upstream-reusable-workflow.yml@main
+    with:
+      qcom-build-utils-ref: main
+      upstream-tag: ${{inputs.upstream-tag}}
+      upstream-repo: ${{vars.UPSTREAM_REPO_GITHUB_NAME}}
+    secrets:
+      TOKEN: ${{secrets.DEB_PKG_BOT_CI_TOKEN}}
