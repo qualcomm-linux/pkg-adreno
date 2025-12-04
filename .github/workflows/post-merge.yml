@@ -1,0 +1,25 @@
+name: Post-Merge
+
+description: |
+  Test that debian/latest builds after the merge. Once the build passes, push the new version to the staging repo
+
+on:
+  push:
+    branches: [ debian/latest ]
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  build:
+    uses: qualcomm-linux/qcom-build-utils/.github/workflows/qcom-build-pkg-reusable-workflow.yml@main
+    with:
+      qcom-build-utils-ref: main
+      debian-ref: debian/latest
+      push-to-repo: true
+      run-abi-checker: true
+      is-post-merge: true
+
+    secrets:
+      TOKEN: ${{secrets.DEB_PKG_BOT_CI_TOKEN}}

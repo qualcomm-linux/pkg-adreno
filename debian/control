@@ -1,0 +1,19 @@
+Source: template
+Section: libs
+Priority: optional
+Maintainer: Simon Beaudoin <sbeaudoi@qti.qualcomm.com>
+Build-Depends: debhelper (>= 13)
+Standards-Version: 4.6.2
+
+Package: template1
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Template package
+ This is an example package to demonstrate the Qualcomm OSS development flow
+
+Package: template-dev
+Section: libdevel
+Architecture: any
+Depends: template1 (= ${binary:Version}), ${misc:Depends}
+Description: Template package dev
+ This is an example package to demonstrate the Qualcomm OSS development flow

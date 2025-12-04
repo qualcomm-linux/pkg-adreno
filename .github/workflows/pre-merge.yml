@@ -1,0 +1,24 @@
+name: Pre-Merge
+description: |
+  Tests that with this PR, the package builds successfully.
+
+on:
+  pull_request_target:
+    branches: [ debian/latest ]
+
+permissions:
+ contents: read
+ security-events: write
+
+jobs:
+  build:
+    uses: qualcomm-linux/qcom-build-utils/.github/workflows/qcom-build-pkg-reusable-workflow.yml@main
+    with:
+      qcom-build-utils-ref: main
+      debian-ref: ${{ github.head_ref }}
+      push-to-repo: false
+      run-abi-checker: true
+      is-post-merge: false
+
+    secrets:
+      TOKEN: ${{ secrets.DEB_PKG_BOT_CI_TOKEN }}
