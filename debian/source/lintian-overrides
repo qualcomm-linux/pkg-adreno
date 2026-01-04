@@ -1,0 +1,8 @@
+qcom-adreno source: override_dh_fixperms-does-not-call-dh_fixperms
+qcom-adreno source: package-depends-on-hardcoded-libc
+qcom-adreno source: source-is-missing
+qcom-adreno source: maintainer-script-lacks-debhelper-token [debian/qcom-adreno-cl1.preinst]
+qcom-adreno source: maintainer-script-lacks-debhelper-token [debian/qcom-adreno1.preinst]
+qcom-adreno source: maintainer-script-lacks-debhelper-token [debian/qcom-adreno1.postinst]
+qcom-adreno source: maintainer-script-lacks-debhelper-token [debian/qcom-adreno1.postrm]
+qcom-adreno source: odd-historical-debian-changelog-version
