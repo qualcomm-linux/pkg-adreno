@@ -1,4 +1,37 @@
 #!/usr/bin/make -f
 
+export DH_VERBOSE = 1
+
 %:
 	dh $@
+
+override_dh_auto_install:
+ifeq ($(DEB_HOST_ARCH),arm64)
+	mkdir -p $(CURDIR)/debian/qcom-adreno-cl-dev/
+	cp -a data/qcom-adreno-cl-dev/arm64/* $(CURDIR)/debian/qcom-adreno-cl-dev/
+endif
+ifeq ($(DEB_HOST_ARCH),arm64)
+	mkdir -p $(CURDIR)/debian/qcom-adreno-cl1/
+	cp -a data/qcom-adreno-cl1/arm64/* $(CURDIR)/debian/qcom-adreno-cl1/
+endif
+ifeq ($(DEB_HOST_ARCH),arm64)
+	mkdir -p $(CURDIR)/debian/qcom-adreno-dev/
+	cp -a data/qcom-adreno-dev/arm64/* $(CURDIR)/debian/qcom-adreno-dev/
+endif
+ifeq ($(DEB_HOST_ARCH),arm64)
+	mkdir -p $(CURDIR)/debian/qcom-adreno1/
+	cp -a data/qcom-adreno1/arm64/* $(CURDIR)/debian/qcom-adreno1/
+endif
+	:
+
+override_dh_fixperms: ;
+
+override_dh_shlibdeps: ;
+
+override_dh_strip: ;
+
+override_dh_dwz: ;
+
+DEB_VERSION = $(shell dpkg-parsechangelog -S 'Version' | cut -d ':' -f 2)
+execute_after_dh_builddeb:
+	:
