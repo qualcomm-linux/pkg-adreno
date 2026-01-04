@@ -1,19 +1,55 @@
-Source: template
+Source: qcom-adreno
+Maintainer: Adreno Maintainers <adreno.maintainers@qti.qualcomm.com>
+Standards-Version: 4.6.2
 Section: libs
 Priority: optional
-Maintainer: Simon Beaudoin <sbeaudoi@qti.qualcomm.com>
-Build-Depends: debhelper (>= 13)
-Standards-Version: 4.6.2
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 13)
 
-Package: template1
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Template package
- This is an example package to demonstrate the Qualcomm OSS development flow
-
-Package: template-dev
+Package: qcom-adreno-cl-dev
+Architecture: arm64
+Description: Headers for OpenCL APIs used by Qualcomm Adreno OpenCL User Mode libraries
+ This is a collection of OpenCL APIs header files supported by qcom-adreno-cl
+ package.
 Section: libdevel
-Architecture: any
-Depends: template1 (= ${binary:Version}), ${misc:Depends}
-Description: Template package dev
- This is an example package to demonstrate the Qualcomm OSS development flow
+Priority: optional
+Depends: ${misc:Depends}, qcom-adreno-cl1 (= ${binary:Version})
+Conflicts: adreno-dev, libgsl-dev, ocl-icd-opencl-dev, opencl-c-headers, opencl-clhpp-headers, qcom-adreno-dev
+Provides: libgsl-dev (= 2.7.1), ocl-icd-opencl-dev (= 2.3.2), opencl-c-headers (= 3.0), opencl-clhpp-headers (= 3.0), opencl-headers (= 3.0)
+Replaces: libgsl-dev, ocl-icd-opencl-dev, opencl-c-headers, opencl-clhpp-headers, opencl-headers
+
+Package: qcom-adreno-cl1
+Architecture: arm64
+Description: Qualcomm Adreno OpenCL User Mode libraries
+ This is a collection of user-mode binary drivers supporting the OpenCL APIs.
+ These drivers target Qualcomm Adreno GPUs.
+Section: libs
+Priority: optional
+Depends: ${misc:Depends}, libc6 (>= 2.38), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.80.0-6ubuntu1), libstdc++6 (>= 13.1), qcom-libdmabufheap (>= 1.0.0), qcom-property-vault (>= 1.0.0), zlib1g (>= 1:1.1.4)
+Conflicts: adreno1, ocl-icd-libopencl1, qcom-adreno1
+Provides: ocl-icd-libopencl1 (= 1.0)
+Replaces: ocl-icd-libopencl1
+
+Package: qcom-adreno-dev
+Architecture: arm64
+Description: Headers for APIs used by Qualcomm Adreno User Mode libraries
+ This is a collection of OpenGLES, VUlkan and OpenCL APIs header files supported
+ by qcom-adreno package.
+Section: libdevel
+Priority: optional
+Depends: ${misc:Depends}, qcom-adreno1 (= ${binary:Version}), libglvnd-dev (>= 1.7.0-1build1)
+Conflicts: adreno-dev, libgsl-dev, ocl-icd-opencl-dev, opencl-c-headers, opencl-clhpp-headers, qcom-adreno-cl-dev
+Provides: adreno-dev, libgsl-dev (= 2.7.1), ocl-icd-opencl-dev (= 2.3.2), opencl-c-headers (= 3.0), opencl-clhpp-headers (= 3.0), opencl-headers (= 3.0), qcom-adreno-cl-dev (= ${binary:Version})
+Replaces: adreno-dev, libgsl-dev, ocl-icd-opencl-dev, opencl-c-headers, opencl-clhpp-headers, opencl-headers, qcom-adreno-cl-dev
+
+Package: qcom-adreno1
+Architecture: arm64
+Description: Qualcomm Adreno User Mode libraries
+ This is a collection of user-mode binary drivers supporting the OpenGLES,
+ Vulkan and OpenCL APIs. These drivers target Qualcomm Adreno GPUs.
+Section: libs
+Priority: optional
+Depends: ${misc:Depends}, libc6 (>= 2.38), libgbm1 (>= 17.1.0~rc2), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.80.0-6ubuntu1), libstdc++6 (>= 13.1), libwayland-client0 (>= 1.22.0-2.1build1), libwayland-server0 (>= 1.22.0-2.1build1), libx11-xcb1 (>= 2:1.8.7), libxcb-image0 (>= 0.2.1), libxcb1, qcom-libdmabufheap (>= 1.0.0), qcom-property-vault (>= 1.0.0), zlib1g (>= 1:1.1.4), libgbm-msm1 (>= 1.1.0~1), libegl1 (>= 1.7.0), libgles1 (>= 1.7.0), libgles2 (>= 1.7.0)
+Conflicts: adreno1, ocl-icd-libopencl1, qcom-adreno-cl1
+Provides: adreno1, ocl-icd-libopencl1 (= 2.3.2), qcom-adreno-cl1 (= ${binary:Version})
+Replaces: adreno1, ocl-icd-libopencl1, qcom-adreno-cl1
