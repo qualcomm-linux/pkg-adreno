@@ -49,7 +49,6 @@ jobs:
       debian-ref: ${{ inputs.debian-ref }}
       distro-codename: ${{ inputs.distro-codename }}
       run-abi-checker: ${{ inputs.abi-checker }}
-      push-to-repo: ${{ inputs.push-to-repo }}
       runner: ${{inputs.builder_runner}}
       is-prebuilt: true
     secrets:
