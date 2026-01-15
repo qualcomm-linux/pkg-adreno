@@ -50,6 +50,5 @@ jobs:
       distro-codename: ${{ inputs.distro-codename }}
       run-abi-checker: ${{ inputs.abi-checker }}
       runner: ${{inputs.builder_runner}}
-      is-prebuilt: true
     secrets:
       TOKEN: ${{ secrets.DEB_PKG_BOT_CI_TOKEN }}
