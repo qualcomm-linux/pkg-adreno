@@ -35,19 +35,25 @@ on:
         options:
           - ubuntu-latest
           - lecore-prd-u2404-arm64-xlrg-od-ephem
+      
+      is-prebuilt:
+        description: For prebuilt tar bins
+        type: boolean
+        default: true
 
 permissions:
   contents: read
 
 jobs:
   build:
-    uses: qualcomm-linux/qcom-build-utils/.github/workflows/qcom-build-pkg-reusable-workflow.yml@main
+    uses: qualcomm-linux/qcom-build-utils/.github/workflows/qcom-build-pkg-reusable-workflow.yml@dev/prebuilt
     with:
-      qcom-build-utils-ref: main
+      qcom-build-utils-ref: dev/prebuilt
       debian-ref: ${{ inputs.debian-ref }}
       distro-codename: ${{ inputs.distro-codename }}
       run-abi-checker: ${{ inputs.abi-checker }}
       is-post-merge: ${{ inputs.push-to-repo }}
       runner: ${{inputs.builder_runner}}
+      is-prebuilt: true
     secrets:
       TOKEN: ${{ secrets.DEB_PKG_BOT_CI_TOKEN }}
