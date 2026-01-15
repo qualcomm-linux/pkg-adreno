@@ -46,9 +46,9 @@ permissions:
 
 jobs:
   build:
-    uses: qualcomm-linux/qcom-build-utils/.github/workflows/qcom-build-pkg-reusable-workflow.yml@dev/prebuilt
+    uses: qualcomm-linux/qcom-build-utils/.github/workflows/qcom-build-pkg-reusable-workflow.yml@dev/prebuilts
     with:
-      qcom-build-utils-ref: dev/prebuilt
+      qcom-build-utils-ref: dev/prebuilts
       debian-ref: ${{ inputs.debian-ref }}
       distro-codename: ${{ inputs.distro-codename }}
       run-abi-checker: ${{ inputs.abi-checker }}
