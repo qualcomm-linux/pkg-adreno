@@ -1,7 +1,6 @@
 name: Build Debian Package
 description: |
   Builds the debian package represented by this repo at the ref pointed by the debain-ref argument.
-
 on:
   workflow_dispatch:
     inputs:
@@ -38,8 +37,7 @@ on:
           - lecore-prd-u2404-arm64-xlrg-od-ephem
 
 permissions:
- contents: read
- security-events: write
+  contents: read
 
 jobs:
   build:
@@ -49,6 +47,7 @@ jobs:
       debian-ref: ${{ inputs.debian-ref }}
       distro-codename: ${{ inputs.distro-codename }}
       run-abi-checker: ${{ inputs.abi-checker }}
+      is-post-merge: ${{ inputs.push-to-repo }}
       runner: ${{inputs.builder_runner}}
     secrets:
       TOKEN: ${{ secrets.DEB_PKG_BOT_CI_TOKEN }}
