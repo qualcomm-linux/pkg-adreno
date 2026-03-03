@@ -1,15 +1,16 @@
 name: Build Debian Package
 description: |
   Builds the debian package represented by this repo at the ref pointed by the debain-ref argument.
+
 on:
   workflow_dispatch:
     inputs:
 
       debian-ref:
-        description: The debian ref to build. For example branch "debian/latest" or tag "debian/1.0.0-1"
+        description: The debian ref to build. For example branch "debian/qcom-next" or tag "debian/1.0.0-1"
         type: string
         required: true
-        default: debian/latest
+        default: debian/qcom-next
 
       distro-codename:
         description: The distribution codename to build for. Ex noble, questing, etc
@@ -18,6 +19,9 @@ on:
         options:
           - noble
           - questing
+          - resolute
+          - trixie
+          - sid
 
       abi-checker:
         description: Run the ABI checker or not
@@ -29,31 +33,16 @@ on:
         type: boolean
         default: false
 
-      builder_runner:
-        type: choice
-        default: ubuntu-latest
-        options:
-          - ubuntu-latest
-          - lecore-prd-u2404-arm64-xlrg-od-ephem
-      
-      is-prebuilt:
-        description: For prebuilt tar bins
-        type: boolean
-        default: true
-
 permissions:
   contents: read
 
 jobs:
   build:
-    uses: qualcomm-linux/qcom-build-utils/.github/workflows/qcom-build-pkg-reusable-workflow.yml@dev/prebuilts
+    uses: qualcomm-linux/qcom-build-utils/.github/workflows/qcom-build-pkg-reusable-workflow.yml@main
     with:
-      qcom-build-utils-ref: dev/prebuilts
+      qcom-build-utils-ref: main
       debian-ref: ${{ inputs.debian-ref }}
       distro-codename: ${{ inputs.distro-codename }}
       run-abi-checker: ${{ inputs.abi-checker }}
       is-post-merge: ${{ inputs.push-to-repo }}
-      runner: ${{inputs.builder_runner}}
-      is-prebuilt: true
-    secrets:
-      TOKEN: ${{ secrets.DEB_PKG_BOT_CI_TOKEN }}
+    secrets: inherit
