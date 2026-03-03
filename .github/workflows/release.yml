@@ -1,0 +1,39 @@
+name: Release Version
+description: |
+  Release a new package version.
+  This workflow is manually triggered via workflow_dispatch.
+
+on:
+  workflow_dispatch:
+    inputs:
+
+      distro-codename:
+        description: The distribution codename to build for. Ex noble, questing, etc
+        type: choice
+        default: noble
+        options:
+          - noble
+          - questing
+          - resolute
+          - trixie
+          - sid
+
+      test-run:
+        description: |
+          If true, the built packages will be uploaded to the 'test' folder in S3.
+          If false, the built packages will be uploaded to the 'proposed' folder in S3
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+
+    uses: qualcomm-linux/qcom-build-utils/.github/workflows/qcom-release-reusable-workflow.yml@main
+    with:
+      qcom-build-utils-ref: main
+      distro-codename: ${{ github.event.inputs.distro-codename }}
+      test-run: ${{ github.event.inputs.test-run == 'true' && true || false }}
+    secrets: inherit
