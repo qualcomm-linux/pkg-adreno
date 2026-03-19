@@ -18,6 +18,12 @@ on:
           - trixie
           - sid
 
+      debian-branch:
+        description: The debian branch to use to execute the release from. For example branch "debian/qcom-next"
+        type: string
+        required: false
+        default: debian/qcom-next
+
       test-run:
         description: |
           If true, the built packages will be uploaded to the 'test' folder in S3.
@@ -35,5 +41,7 @@ jobs:
     with:
       qcom-build-utils-ref: main
       distro-codename: ${{ github.event.inputs.distro-codename }}
+      debian-branch: ${{ github.event.inputs.debian-branch }}
       test-run: ${{ github.event.inputs.test-run == 'true' && true || false }}
+      
     secrets: inherit
