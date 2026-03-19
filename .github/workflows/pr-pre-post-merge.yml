@@ -9,7 +9,7 @@ description: |
 
 on:
   pull_request_target:
-    branches: [ debian/* ]
+    branches: [ debian/*, qcom/** ]
     types: [ opened, synchronize, reopened, closed ]
 
 permissions:
