@@ -44,5 +44,4 @@ jobs:
       debian-ref: ${{ inputs.debian-ref }}
       distro-codename: ${{ inputs.distro-codename }}
       run-abi-checker: ${{ inputs.abi-checker }}
-      is-post-merge: ${{ inputs.push-to-repo }}
     secrets: inherit

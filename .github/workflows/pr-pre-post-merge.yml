@@ -27,6 +27,4 @@ jobs:
       # POST-MERGE: use the base branch name from the PR (e.g. "debian/qcom-next")
       debian-ref: ${{ (github.event.action == 'closed' && github.event.pull_request.merged) && github.event.pull_request.base.ref || github.head_ref }}
       run-abi-checker: true
-       # True if the PR was merged (i.e. post-merge): closed & merged
-      is-post-merge: ${{ github.event.action == 'closed' && github.event.pull_request.merged == true }}
     secrets: inherit
