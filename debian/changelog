@@ -1,3 +1,9 @@
+qcom-adreno (1.855.2-1) UNRELEASED; urgency=medium
+
+  * New upstream release (Artifactory tag: 260318)
+
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Wed, 25 Mar 2026 03:58:28 +0000
+
 qcom-adreno (1.855.2) unreleased; urgency=medium
 
   * debian: Inital release 1.855.2
