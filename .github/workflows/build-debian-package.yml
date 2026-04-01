@@ -28,11 +28,6 @@ on:
         type: boolean
         default: false
 
-      push-to-repo:
-        description: Push to repository upon successful build
-        type: boolean
-        default: false
-
 permissions:
   contents: read
 
