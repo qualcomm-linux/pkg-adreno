@@ -33,6 +33,7 @@ on:
 
 permissions:
   contents: write
+  packages: read
 
 jobs:
   release:
@@ -43,5 +44,5 @@ jobs:
       distro-codename: ${{ github.event.inputs.distro-codename }}
       debian-branch: ${{ github.event.inputs.debian-branch }}
       test-run: ${{ github.event.inputs.test-run == 'true' && true || false }}
-      
-    secrets: inherit
+    secrets:
+      PAT: ${{secrets.DEB_PKG_BOT_CI_TOKEN}}

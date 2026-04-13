@@ -16,8 +16,9 @@ on:
         required: true
 
 permissions:
- contents: write
- pull-requests: write
+  contents: write
+  packages: read
+  pull-requests: write
 
 jobs:
   promote:
@@ -28,4 +29,5 @@ jobs:
       debian-branch: ${{inputs.debian-branch}}
       upstream-tag: ${{inputs.upstream-tag}}
       upstream-repo: ${{vars.UPSTREAM_REPO_GITHUB_NAME}}
-    secrets: inherit
+    secrets:
+      PAT: ${{secrets.DEB_PKG_BOT_CI_TOKEN}} # If the source repo is private, this secret is necessary to be provided in the repo
