@@ -2,7 +2,7 @@
 set -e
 
 # Remove existing dpkg-divert
-for f in libOpenCL.so.1
+for f in libEGL.so.1
 do
     if dpkg-divert --list | grep -q $f; then
         echo "Removing existing diversion for $f"

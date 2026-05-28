@@ -1,0 +1,4 @@
+adreno/usr/lib/libCB.so.1.0.0 usr/lib/${DEB_HOST_MULTIARCH}/
+adreno/usr/lib/libOpenCL_adreno.so.1.0.0 usr/lib/${DEB_HOST_MULTIARCH}/
+
+adreno/usr/lib/adrenocl.icd etc/OpenCL/vendors/

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    purge|remove|disappear)
+        if lsmod | grep -wq 'msm_display'; then
+            [ -x /usr/share/update-notifier/notify-reboot-required ] && /usr/share/update-notifier/notify-reboot-required || true
+        fi
+    ;;
+
+    upgrade|failed-upgrade|abort-install|abort-upgrade)
+    ;;
+
+    *)
+        echo "postrm called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0
+
