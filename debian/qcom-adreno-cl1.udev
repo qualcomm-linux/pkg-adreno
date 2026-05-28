@@ -1,0 +1,4 @@
+# Temporary workaround - give access to /dev/dri/renderD128 to video group as well
+# We may remove that ensuring ubuntu user is part of the render group or documenting it should be added when OpenCL is to be used
+ACTION=="add", SUBSYSTEM=="drm", KERNEL=="renderD128", RUN+="/bin/setfacl -m g:video:rw $env{DEVNAME}"
+

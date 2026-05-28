@@ -1,0 +1,6 @@
+adreno/usr/lib/libvulkan_adreno.so.1.0.0 usr/lib/${DEB_HOST_MULTIARCH}/
+
+adreno/usr/lib/adrenovk.json usr/share/vulkan/icd.d/
+adreno/usr/lib/10-qcom-adreno-vulkan.conf usr/lib/environment.d/
+adreno/usr/lib/qcom-adreno-vulkan-vars.sh usr/lib/qcom-adreno-vulkan/
+adreno/usr/lib/qcom-adreno-vulkan-profile.sh etc/profile.d/
