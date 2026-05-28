@@ -1,5 +1,0 @@
-adreno/usr/lib/libEGL_adreno.so.1.0.0 usr/lib/${DEB_HOST_MULTIARCH}/
-adreno/usr/lib/libeglSubDriverWayland.so.1.0.0 usr/lib/${DEB_HOST_MULTIARCH}/
-adreno/usr/lib/libeglSubDriverX11.so.1.0.0 usr/lib/${DEB_HOST_MULTIARCH}/
-
-adreno/usr/lib/10_adreno.json usr/share/glvnd/egl_vendor.d/
