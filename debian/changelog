@@ -1,3 +1,9 @@
+qcom-adreno (1.855.5-2~) UNRELEASED; urgency=medium
+
+  * WIP — update changelog before next release
+
+ -- Maintainers.pkg-qcom-adreno <Maintainers.pkg-qcom-adreno@qualcomm.com>  Thu, 28 May 2026 09:39:27 +0000
+
 qcom-adreno (1.855.5-1) resolute; urgency=medium
 
   * New upstream release (Artifactory tag: 260527)
