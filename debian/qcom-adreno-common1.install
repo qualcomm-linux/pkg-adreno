@@ -1,0 +1,11 @@
+adreno/usr/lib/libllvm-glnext.so.1.0.0 usr/lib/${DEB_HOST_MULTIARCH}/
+adreno/usr/lib/libllvm-qcom.so.1.0.0 usr/lib/${DEB_HOST_MULTIARCH}/
+adreno/usr/lib/libllvm-qgl.so.1.0.0 usr/lib/${DEB_HOST_MULTIARCH}/
+adreno/usr/lib/libgsl.so.1.0.0 usr/lib/${DEB_HOST_MULTIARCH}/
+adreno/usr/lib/libadreno_utils.so.1.0.0 usr/lib/${DEB_HOST_MULTIARCH}/
+adreno/usr/lib/libq3dtools_adreno.so.1.0.0 usr/lib/${DEB_HOST_MULTIARCH}/
+adreno/usr/lib/libq3dtools_esx.so.1.0.0 usr/lib/${DEB_HOST_MULTIARCH}/
+
+adreno/usr/lib/qcom-adreno-common-vars.sh usr/lib/qcom-adreno-common/
+adreno/usr/lib/qcom-adreno-common-profile.sh etc/profile.d/
+adreno/usr/lib/50-qpa-platform.conf usr/lib/environment.d/
