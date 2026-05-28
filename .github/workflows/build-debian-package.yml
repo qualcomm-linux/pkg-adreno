@@ -37,9 +37,9 @@ permissions:
 
 jobs:
   build:
-    uses: qualcomm-linux/qcom-build-utils/.github/workflows/qcom-build-pkg-reusable-workflow.yml@fix/promote-prebuilt-packages-read
+    uses: qualcomm-linux/qcom-build-utils/.github/workflows/qcom-build-pkg-reusable-workflow.yml@main
     with:
-      qcom-build-utils-ref: fix/promote-prebuilt-packages-read
+      qcom-build-utils-ref: main
       debian-ref: ${{ inputs.debian-ref }}
       suite: ${{ inputs.suite }}
       force-docker-build: ${{ inputs.force-docker-build }}
