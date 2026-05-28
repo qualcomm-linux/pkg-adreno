@@ -1,8 +1,8 @@
-qcom-adreno (1.855.5-1) UNRELEASED; urgency=medium
+qcom-adreno (1.855.5-1) resolute; urgency=medium
 
   * New upstream release (Artifactory tag: 260527)
 
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Thu, 28 May 2026 06:54:13 +0000
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Thu, 28 May 2026 09:37:52 +0000
 
 qcom-adreno (1.855.5) resolute; urgency=medium
 
