@@ -2,19 +2,24 @@ Source: qcom-adreno
 Section: libs
 Priority: optional
 Maintainer: Maintainers.pkg-qcom-adreno <Maintainers.pkg-qcom-adreno@qualcomm.com>
-Build-Depends: debhelper-compat (= 13), pkgconf (>= 2.5.1-4), libglib2.0-dev (>= 2.88.0-1), ninja-build (>= 1.13.2-1),
- libwayland-bin (>= 1.24.0-2), libwayland-dev (>= 1.24.0-2), libwayland-egl-backend-dev (>= 1.24.0-2),
- libgbm1 (>= 26.0.3-1ubuntu1), libgbm-dev (>= 26.0.3-1ubuntu1), libgbm-msm (>= 1.2.5-5), libgbm-msm-dev (>= 1.2.5-5),
- libxcb1-dev (>= 1.17.0-2ubuntu1), libx11-dev (>= 2:1.8.13-1), libx11-xcb-dev (>= 2:1.8.13-1),
+Build-Depends: debhelper-compat (= 13), pkgconf (>= 2.5.1-4),
+ libglib2.0-dev (>= 2.88.0-1), ninja-build (>= 1.13.2-1),
+ libwayland-bin (>= 1.24.0-2), libwayland-dev (>= 1.24.0-2),
+ libwayland-egl-backend-dev (>= 1.24.0-2), libgbm1 (>= 26.0.3-1ubuntu1),
+ libgbm-dev (>= 26.0.3-1ubuntu1), libgbm-msm (>= 1.2.5-5),
+ libgbm-msm-dev (>= 1.2.5-5), libxcb1-dev (>= 1.17.0-2ubuntu1),
+ libx11-dev (>= 2:1.8.13-1), libx11-xcb-dev (>= 2:1.8.13-1),
  libxcb-image0-dev (>= 0.4.0-2build2), libxcb-dri3-dev (>= 1.17.0-2ubuntu1),
- libxcb-present-dev (>= 1.17.0-2ubuntu1), libdrm-dev (>= 2.4.131-1), libglvnd-dev (>= 1.7.0-3),
- libxcb-sync-dev (>= 1.17.0-2ubuntu1), libxshmfence-dev (>= 1.3.3-1build1)
+ libxcb-present-dev (>= 1.17.0-2ubuntu1), libdrm-dev (>= 2.4.131-1),
+ libglvnd-dev (>= 1.7.0-3), libxcb-sync-dev (>= 1.17.0-2ubuntu1),
+ libxshmfence-dev (>= 1.3.3-1build1)
 Standards-Version: 4.6.2
 
 Package: qcom-adreno-common1
 Architecture: arm64
 Description: Qualcomm Adreno Common User Mode libraries
- This is a collection of common user-mode binary drivers for Qualcomm Adreno GPUs.
+ This is a collection of common user-mode binary drivers for Qualcomm Adreno
+ GPUs.
 Section: libs
 Priority: optional
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -23,7 +28,8 @@ Conflicts: adreno1
 Package: qcom-adreno-common-dev
 Architecture: arm64
 Description: Dev package for Qualcomm Adreno Common User Mode libraries
- This is a collection of header files for common user-mode binary drivers for Qualcomm Adreno GPUs.
+ This is a collection of header files for common user-mode binary drivers for
+ Qualcomm Adreno GPUs.
 Section: libdevel
 Priority: optional
 Depends: ${misc:Depends}, qcom-adreno-common1 (= ${binary:Version})
@@ -49,8 +55,9 @@ Description: Dev package for Qualcomm Adreno OpenCL User Mode libraries
  package.
 Section: libdevel
 Priority: optional
-Depends: ${misc:Depends}, ocl-icd-opencl-dev, opencl-c-headers, opencl-clhpp-headers, opencl-headers,
- qcom-adreno-cl1 (= ${binary:Version}), qcom-adreno-common-dev (= ${binary:Version})
+Depends: ${misc:Depends}, ocl-icd-opencl-dev, opencl-c-headers,
+ opencl-clhpp-headers, opencl-headers, qcom-adreno-cl1 (= ${binary:Version}),
+ qcom-adreno-common-dev (= ${binary:Version})
 Conflicts: adreno-dev
 
 Package: qcom-adreno-gles1
@@ -60,8 +67,9 @@ Description: Qualcomm Adreno OpenGLESv1 User Mode libraries
  These drivers target Qualcomm Adreno GPUs.
 Section: libs
 Priority: optional
-Depends: ${shlibs:Depends}, ${misc:Depends}, , kgsl-dkms, libgbm-msm (>= 1.2.5-5),
- libgles1 (>= 1.7.0), qcom-adreno-common1 (= ${binary:Version})
+Depends: ${shlibs:Depends}, ${misc:Depends}, , kgsl-dkms,
+ libgbm-msm (>= 1.2.5-5), libgles1 (>= 1.7.0),
+ qcom-adreno-common1 (= ${binary:Version})
 Conflicts: adreno1
 
 Package: qcom-adreno-gles2
@@ -71,8 +79,9 @@ Description: Qualcomm Adreno OpenGLESv2 User Mode libraries
  These drivers target Qualcomm Adreno GPUs.
 Section: libs
 Priority: optional
-Depends: ${shlibs:Depends}, ${misc:Depends}, kgsl-dkms, libgbm-msm (>= 1.2.5-5),
- libgles2 (>= 1.7.0), qcom-adreno-common1 (= ${binary:Version})
+Depends: ${shlibs:Depends}, ${misc:Depends}, kgsl-dkms,
+ libgbm-msm (>= 1.2.5-5), libgles2 (>= 1.7.0),
+ qcom-adreno-common1 (= ${binary:Version})
 Conflicts: adreno1
 
 Package: qcom-adreno-gles-dev
@@ -82,7 +91,8 @@ Description: Dev package for Qualcomm Adreno OpenGLES User Mode libraries
 Section: libdevel
 Priority: optional
 Depends: ${misc:Depends}, qcom-adreno-gles1 (= ${binary:Version}),
- qcom-adreno-gles2 (= ${binary:Version}), qcom-adreno-common-dev (= ${binary:Version})
+ qcom-adreno-gles2 (= ${binary:Version}),
+ qcom-adreno-common-dev (= ${binary:Version})
 Conflicts: adreno-dev
 
 Package: qcom-adreno-egl1
@@ -93,8 +103,10 @@ Description: Qualcomm Adreno EGL User Mode libraries
 Section: libs
 Priority: optional
 Depends: ${shlibs:Depends}, ${misc:Depends}, kgsl-dkms, libglvnd0 (>= 1.7.0),
- libgbm-msm (>= 1.2.5-5), libegl1 (>= 1.7.0), qcom-adreno-common1 (= ${binary:Version}),
- qcom-adreno-gles1 (= ${binary:Version}), qcom-adreno-gles2 (= ${binary:Version})
+ libgbm-msm (>= 1.2.5-5), libegl1 (>= 1.7.0),
+ qcom-adreno-common1 (= ${binary:Version}),
+ qcom-adreno-gles1 (= ${binary:Version}),
+ qcom-adreno-gles2 (= ${binary:Version})
 Conflicts: adreno1
 
 Package: qcom-adreno-egl-dev
@@ -103,7 +115,7 @@ Description: Dev package for Qualcomm Adreno EGL User Mode libraries
  This is a collection of EGL APIs header files.
 Section: libdevel
 Priority: optional
-Depends: ${misc:Depends}, qcom-adreno-egl (= ${binary:Version}),
+Depends: ${misc:Depends}, qcom-adreno-egl1 (= ${binary:Version}),
  qcom-adreno-common-dev (= ${binary:Version}), libglvnd-dev
 Conflicts: adreno-dev
 
@@ -114,8 +126,9 @@ Description: Qualcomm Adreno Vulkan User Mode libraries
  These drivers target Qualcomm Adreno GPUs.
 Section: libs
 Priority: optional
-Depends: ${shlibs:Depends}, ${misc:Depends}, kgsl-dkms, libvulkan1 (>= 1.4.341.0-1),
- libgbm-msm (>= 1.2.5-5), qcom-adreno-common1 (= ${binary:Version})
+Depends: ${shlibs:Depends}, ${misc:Depends}, kgsl-dkms,
+ libvulkan1 (>= 1.4.341.0-1), libgbm-msm (>= 1.2.5-5),
+ qcom-adreno-common1 (= ${binary:Version})
 Conflicts: adreno1
 
 Package: qcom-adreno-vulkan-dev
@@ -124,7 +137,8 @@ Description: Dev package for Qualcomm Adreno Vulkan User Mode libraries
  This is a collection of Vulkan APIs header files supported.
 Section: libdevel
 Priority: optional
-Depends: ${misc:Depends}, qcom-adreno-vulkan1 (= ${binary:Version}), qcom-adreno-common-dev(= ${binary:Version}), libvulkan-dev
+Depends: ${misc:Depends}, qcom-adreno-vulkan1 (= ${binary:Version}),
+ qcom-adreno-common-dev(= ${binary:Version}), libvulkan-dev
 Conflicts: adreno-dev
 
 Package: qcom-adreno1
@@ -134,17 +148,20 @@ Description: meta-package for Qualcomm Adreno User Mode libraries
  Vulkan and OpenCL APIs. These drivers target Qualcomm Adreno GPUs.
 Section: libs
 Priority: optional
-Depends: ${shlibs:Depends}, ${misc:Depends}, qcom-adreno-common1 (= ${binary:Version}),
- qcom-adreno-cl1 (= ${binary:Version}), qcom-adreno-gles1 (= ${binary:Version}),
- qcom-adreno-gles2 (= ${binary:Version}), qcom-adreno-egl1 (= ${binary:Version}),
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ qcom-adreno-common1 (= ${binary:Version}),
+ qcom-adreno-cl1 (= ${binary:Version}),
+ qcom-adreno-gles1 (= ${binary:Version}),
+ qcom-adreno-gles2 (= ${binary:Version}),
+ qcom-adreno-egl1 (= ${binary:Version}),
  qcom-adreno-vulkan1 (= ${binary:Version})
 Conflicts: adreno1
 
 Package: qcom-adreno-dev
 Architecture: arm64
 Description: Headers for APIs used by Qualcomm Adreno User Mode libraries
- This is a collection of OpenGLES, VUlkan and OpenCL APIs header files supported
- by qcom-adreno package.
+ This is a collection of OpenGLES, VUlkan and OpenCL APIs header files
+ supported by qcom-adreno package.
 Section: libdevel
 Priority: optional
 Depends: ${misc:Depends}, qcom-adreno1 (= ${binary:Version})
