@@ -1,1 +1,1 @@
-qcom-adreno1: package-name-doesnt-match-sonames libvulkan-adreno1
+qcom-adreno-vulkan1: package-name-doesnt-match-sonames libvulkan-adreno1
