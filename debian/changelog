@@ -1,8 +1,8 @@
 qcom-adreno (1.855.5-2) stable; urgency=medium
 
+  * Initial release for Debian Trixie.
   * Recompile libraries in Debian Trixie and update package dependencies.
   * Remove dependency on qcom-libdmabufheap and qcom-property-vault.
-  * Initial release for Debian Trixie.
   * Fix qcom-adreno-egl-dev depends on qcom-adreno-egl1.
   * Fix execution rights /etc/profile.d/qcom-adreno-vulkan-profile.sh and
     /usr/lib/qcom-adreno-vulkan/qcom-adreno-vulkan-vars.sh.
