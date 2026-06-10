@@ -1,0 +1,3 @@
+/usr/lib/${DEB_HOST_MULTIARCH}/libEGL_adreno.so.1 /usr/lib/${DEB_HOST_MULTIARCH}/libEGL_adreno.so
+/usr/lib/${DEB_HOST_MULTIARCH}/libeglSubDriverWayland.so.1 /usr/lib/${DEB_HOST_MULTIARCH}/libeglSubDriverWayland.so
+/usr/lib/${DEB_HOST_MULTIARCH}/libeglSubDriverX11.so.1 /usr/lib/${DEB_HOST_MULTIARCH}/libeglSubDriverX11.so
