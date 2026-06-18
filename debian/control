@@ -35,7 +35,7 @@ Depends: ${misc:Depends}, ${shlibs:Depends}
 Conflicts: adreno1
 
 Package: qcom-adreno-common-dev
-Architecture: arm64
+Architecture: all
 Description: Dev package for Qualcomm Adreno Common User Mode libraries
  This is a collection of header files for common user-mode binary drivers for
  Qualcomm Adreno GPUs.
@@ -198,7 +198,7 @@ Depends:
 Conflicts: adreno1
 
 Package: qcom-adreno-dev
-Architecture: arm64
+Architecture: all
 Description: Headers for APIs used by Qualcomm Adreno User Mode libraries
  This is a collection of OpenGLES, VUlkan and OpenCL APIs header files
  supported by qcom-adreno package.
