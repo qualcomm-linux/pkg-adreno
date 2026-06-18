@@ -1,6 +1,8 @@
 Source: qcom-adreno
 Section: libs
 Maintainer: Maintainers.pkg-qcom-adreno <Maintainers.pkg-qcom-adreno@qualcomm.com>
+Uploaders:
+ Agathe Porte <agathe.porte@oss.qualcomm.com>
 Build-Depends:
  debhelper-compat (= 13),
  libdrm-dev (>= 2.4.124-2),
