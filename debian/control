@@ -30,18 +30,20 @@ Vcs-Git: https://github.com/qualcomm-linux/pkg-qcom-adreno.git
 
 Package: qcom-adreno-common1
 Architecture: arm64
-Description: Qualcomm Adreno Common User Mode libraries
- This is a collection of common user-mode binary drivers for Qualcomm Adreno
- GPUs.
+Description: Qualcomm Adreno Common User Mode (runtime library)
+ Collection of prebuilt common libraries to support Qualcomm Adreno GPUs.
+ .
+ This package provides the runtime library.
 Section: libs
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Conflicts: adreno1
 
 Package: qcom-adreno-common-dev
 Architecture: all
-Description: Dev package for Qualcomm Adreno Common User Mode libraries
- This is a collection of header files for common user-mode binary drivers for
- Qualcomm Adreno GPUs.
+Description: Qualcomm Adreno Common User Mode (development files)
+ Collection of prebuilt common libraries to support Qualcomm Adreno GPUs.
+ .
+ This package provides files necessary to develop programs using the library.
 Section: libdevel
 Depends: qcom-adreno-common1 (= ${binary:Version}), ${misc:Depends}
 Conflicts: adreno-dev, libgsl-dev
@@ -50,9 +52,11 @@ Replaces: libgsl-dev
 
 Package: qcom-adreno-cl1
 Architecture: arm64
-Description: Qualcomm Adreno OpenCL User Mode libraries
- This is a collection of user-mode binary drivers supporting the OpenCL APIs.
- These drivers target Qualcomm Adreno GPUs.
+Description: Qualcomm Adreno OpenCL User Mode (runtime library)
+ Collection of prebuilt User Mode libraries to support OpenCL APIs for Qualcomm
+ Adreno GPUs.
+ .
+ This package provides the runtime library.
 Section: libs
 Depends:
  ocl-icd-libopencl1,
@@ -63,9 +67,11 @@ Conflicts: adreno1
 
 Package: qcom-adreno-cl-dev
 Architecture: arm64
-Description: Dev package for Qualcomm Adreno OpenCL User Mode libraries
- This is a collection of OpenCL APIs header files supported by qcom-adreno-cl1
- package.
+Description:  Qualcomm Adreno OpenCL User Mode (development files)
+ Collection of prebuilt User Mode libraries to support OpenCL APIs for Qualcomm
+ Adreno GPUs.
+ .
+ This package provides files necessary to develop programs using the library.
 Section: libdevel
 Depends:
  ocl-icd-opencl-dev,
@@ -79,9 +85,11 @@ Conflicts: adreno-dev
 
 Package: qcom-adreno-gles1
 Architecture: arm64
-Description: Qualcomm Adreno OpenGLESv1 User Mode libraries
- This is a collection of user-mode binary drivers for GLESv1.
- These drivers target Qualcomm Adreno GPUs.
+Description: Qualcomm Adreno OpenGLESv1 User Mode (runtime library)
+ Collection of prebuilt User Mode libraries to support OpenGL ES v1 APIs for
+ Qualcomm Adreno GPUs.
+ .
+ This package provides the runtime library.
 Section: libs
 Depends:
  libgles1 (>= 1.7.0),
@@ -93,9 +101,11 @@ Conflicts: adreno1
 
 Package: qcom-adreno-gles2
 Architecture: arm64
-Description: Qualcomm Adreno OpenGLESv2 User Mode libraries
- This is a collection of user-mode binary drivers for GLESv2.
- These drivers target Qualcomm Adreno GPUs.
+Description: Qualcomm Adreno OpenGLESv2 User Mode (runtime library)
+ Collection of prebuilt User Mode libraries to support OpenGL ES v2 APIs for
+ Qualcomm Adreno GPUs.
+ .
+ This package provides the runtime library.
 Section: libs
 Depends:
  libgles2 (>= 1.7.0),
@@ -107,8 +117,11 @@ Conflicts: adreno1
 
 Package: qcom-adreno-gles-dev
 Architecture: arm64
-Description: Dev package for Qualcomm Adreno OpenGLES User Mode libraries
- This is a collection of OpenGLES APIs header files.
+Description: Qualcomm Adreno OpenGLES User Mode (development files)
+ Collection of prebuilt User Mode libraries to support OpenGL ES APIs for
+ Qualcomm Adreno GPUs.
+ .
+ This package provides files necessary to develop programs using the library.
 Section: libdevel
 Depends:
  qcom-adreno-common-dev (= ${binary:Version}),
@@ -119,9 +132,11 @@ Conflicts: adreno-dev
 
 Package: qcom-adreno-egl1
 Architecture: arm64
-Description: Qualcomm Adreno EGL User Mode libraries
- This is a collection of user-mode binary drivers for EGL.
- These drivers target Qualcomm Adreno GPUs.
+Description: Qualcomm Adreno EGL User Mode (runtime library)
+ Collection of prebuilt User Mode libraries to support EGL APIs for
+ Qualcomm Adreno GPUs.
+ .
+ This package provides the runtime library.
 Section: libs
 Depends:
  libegl1 (>= 1.7.0),
@@ -136,8 +151,11 @@ Conflicts: adreno1
 
 Package: qcom-adreno-egl-dev
 Architecture: arm64
-Description: Dev package for Qualcomm Adreno EGL User Mode libraries
- This is a collection of EGL APIs header files.
+Description: Qualcomm Adreno EGL User Mode (development files)
+ Collection of prebuilt User Mode libraries to support EGL APIs for
+ Qualcomm Adreno GPUs.
+ .
+ This package provides files necessary to develop programs using the library.
 Section: libdevel
 Depends:
  libglvnd-dev,
@@ -148,9 +166,11 @@ Conflicts: adreno-dev
 
 Package: qcom-adreno-vulkan1
 Architecture: arm64
-Description: Qualcomm Adreno Vulkan User Mode libraries
- This is a collection of user-mode binary drivers supporting Vulkan APIs.
- These drivers target Qualcomm Adreno GPUs.
+Description: Qualcomm Adreno Vulkan User Mode (runtime library)
+ Collection of prebuilt User Mode libraries to support Vulkan APIs for
+ Qualcomm Adreno GPUs.
+ .
+ This package provides the runtime library.
 Section: libs
 Depends:
  libvulkan1 (>= 1.4.341.0-1),
@@ -162,8 +182,11 @@ Conflicts: adreno1
 
 Package: qcom-adreno-vulkan-dev
 Architecture: arm64
-Description: Dev package for Qualcomm Adreno Vulkan User Mode libraries
- This is a collection of Vulkan APIs header files supported.
+Description: Qualcomm Adreno Vulkan User Mode (development files)
+ Collection of prebuilt User Mode libraries to support Vulkan APIs for
+ Qualcomm Adreno GPUs.
+ .
+ This package provides files necessary to develop programs using the library.
 Section: libdevel
 Depends:
  libvulkan-dev,
@@ -174,9 +197,11 @@ Conflicts: adreno-dev
 
 Package: qcom-adreno1
 Architecture: all
-Description: meta-package for Qualcomm Adreno User Mode libraries
- This is a collection of user-mode binary drivers supporting the OpenGLES,
- Vulkan and OpenCL APIs. These drivers target Qualcomm Adreno GPUs.
+Description: Qualcomm Adreno User Mode (meta package)
+ Collection of prebuilt User Mode libraries to support OpenGL ES, Vulkan, and
+ OpenCL APIs for Qualcomm Adreno GPUs.
+ .
+ This package depends on libraries required to support all runtime features.
 Section: libs
 Depends:
  qcom-adreno-cl1 (= ${binary:Version}),
@@ -191,9 +216,11 @@ Conflicts: adreno1
 
 Package: qcom-adreno-dev
 Architecture: all
-Description: Headers for APIs used by Qualcomm Adreno User Mode libraries
+Description: Qualcomm Adreno User Mode (development files)
  This is a collection of OpenGLES, VUlkan and OpenCL APIs header files
  supported by qcom-adreno package.
+ .
+ This package provides files necessary to develop programs using the library.
 Section: libdevel
 Depends: qcom-adreno1 (= ${binary:Version}), ${misc:Depends}
 Conflicts: adreno-dev
