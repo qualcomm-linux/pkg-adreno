@@ -51,7 +51,3 @@ endif
 override_dh_strip: ;
 
 override_dh_dwz: ;
-
-DEB_VERSION = $(shell dpkg-parsechangelog -S 'Version' | cut -d ':' -f 2)
-execute_after_dh_builddeb:
-        :
