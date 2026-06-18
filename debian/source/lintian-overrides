@@ -1,0 +1,5 @@
+# This package is non-free, we are prebuilt .so files
+source-contains-prebuilt-binary [data/*]
+
+# This package is non-free, we are expecting missing sources for .so files
+source-is-missing [data/*]
