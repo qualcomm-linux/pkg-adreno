@@ -2,3 +2,6 @@ qcom-adreno-vulkan1: package-name-doesnt-match-sonames libvulkan-adreno1
 
 # Let’s ignore spelling mistakes for now
 spelling-error-in-binary
+
+# We do not want to tinker the big copyright notice
+old-fsf-address-in-copyright-file

@@ -1,4 +1,2 @@
-qcom-adreno-gles1: package-name-doesnt-match-sonames libGLESv1-CM-adreno1
-
 # We do not want to tinker the big copyright notice
 old-fsf-address-in-copyright-file
