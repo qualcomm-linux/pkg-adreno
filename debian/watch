@@ -1,0 +1,7 @@
+Version: 5
+
+# Note that this is currently not working because qartifactory requires
+# Javascript for listing the available files. You have to manually download
+# the file from your browser and call mk-origtargz on top of it.
+Source: https://qartifactory-edge.qualcomm.com/ui/native/qsc_releases/software/chip/component/gfx-adreno.le.0.0/260608/prebuilt_trixie/
+Matching-Pattern: prebuilt_trixie/qcom-adreno_@ANY_VERSION@_arm64@ARCHIVE_EXT@
