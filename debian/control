@@ -25,6 +25,8 @@ Build-Depends:
  pkgconf (>= 1.8.1-4)
 Standards-Version: 4.6.2
 Homepage: https://www.qualcomm.com/processors/adreno
+Vcs-Browser: https://github.com/qualcomm-linux/pkg-qcom-adreno
+Vcs-Git: https://github.com/qualcomm-linux/pkg-qcom-adreno.git
 
 Package: qcom-adreno-common1
 Architecture: arm64
