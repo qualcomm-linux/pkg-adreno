@@ -31,6 +31,7 @@ $(foreach PKG,$(PACKAGES),$(shell \
 execute_after_dh_fixperms:
 	# See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/38
 	chmod -x debian/qcom-adreno-common1/usr/lib/qcom-adreno-common/qcom-adreno-common-vars.sh
+	chmod -x debian/qcom-adreno-common1/etc/profile.d/qcom-adreno-common-profile.sh
 
 override_dh_strip: ;
 
