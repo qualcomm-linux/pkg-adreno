@@ -4,4 +4,5 @@ qcom-adreno-gles2: package-name-doesnt-match-sonames libGLESv2-adreno2
 spelling-error-in-binary *
 
 # We do not want to tinker the big copyright notice
+# See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/40
 old-fsf-address-in-copyright-file

@@ -4,4 +4,5 @@ qcom-adreno-cl1: package-name-doesnt-match-sonames libCB1 libOpenCL-adreno1
 spelling-error-in-binary
 
 # We do not want to tinker the big copyright notice
+# See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/40
 old-fsf-address-in-copyright-file
