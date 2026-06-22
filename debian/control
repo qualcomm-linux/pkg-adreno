@@ -35,7 +35,6 @@ Description: Qualcomm Adreno Common User Mode (runtime library)
  Collection of prebuilt common libraries to support Qualcomm Adreno GPUs.
  .
  This package provides the runtime library.
-Section: libs
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Conflicts: adreno1
 
@@ -58,7 +57,6 @@ Description: Qualcomm Adreno OpenCL User Mode (runtime library)
  Adreno GPUs.
  .
  This package provides the runtime library.
-Section: libs
 Depends:
  ocl-icd-libopencl1,
  qcom-adreno-common1 (= ${binary:Version}),
@@ -91,7 +89,6 @@ Description: Qualcomm Adreno OpenGLESv1 User Mode (runtime library)
  Qualcomm Adreno GPUs.
  .
  This package provides the runtime library.
-Section: libs
 Depends:
  libgles1 (>= 1.7.0),
  qcom-adreno-common1 (= ${binary:Version}),
@@ -107,7 +104,6 @@ Description: Qualcomm Adreno OpenGLESv2 User Mode (runtime library)
  Qualcomm Adreno GPUs.
  .
  This package provides the runtime library.
-Section: libs
 Depends:
  libgles2 (>= 1.7.0),
  qcom-adreno-common1 (= ${binary:Version}),
@@ -138,7 +134,6 @@ Description: Qualcomm Adreno EGL User Mode (runtime library)
  Qualcomm Adreno GPUs.
  .
  This package provides the runtime library.
-Section: libs
 Depends:
  libegl1 (>= 1.7.0),
  libglvnd0 (>= 1.7.0),
@@ -172,7 +167,6 @@ Description: Qualcomm Adreno Vulkan User Mode (runtime library)
  Qualcomm Adreno GPUs.
  .
  This package provides the runtime library.
-Section: libs
 Depends:
  libvulkan1 (>= 1.4.341.0-1),
  qcom-adreno-common1 (= ${binary:Version}),
@@ -203,7 +197,6 @@ Description: Qualcomm Adreno User Mode (metapackage)
  OpenCL APIs for Qualcomm Adreno GPUs.
  .
  This package depends on libraries required to support all runtime features.
-Section: libs
 Depends:
  qcom-adreno-cl1 (= ${binary:Version}),
  qcom-adreno-common1 (= ${binary:Version}),
