@@ -1,0 +1,12 @@
+From: Agathe Porte <agathe.porte@oss.qualcomm.com>
+Subject: Fix bash-term-in-posix-shell
+
+Forwarded: no
+
+--- a/data/qcom-adreno-vulkan1/arm64/etc/profile.d/qcom-adreno-vulkan-profile.sh
++++ b/data/qcom-adreno-vulkan1/arm64/etc/profile.d/qcom-adreno-vulkan-profile.sh
+@@ -1,3 +1,3 @@
+ if [ -f /usr/lib/qcom-adreno-vulkan/qcom-adreno-vulkan-vars.sh ]; then
+-    source /usr/lib/qcom-adreno-vulkan/qcom-adreno-vulkan-vars.sh
++    . /usr/lib/qcom-adreno-vulkan/qcom-adreno-vulkan-vars.sh
+ fi
