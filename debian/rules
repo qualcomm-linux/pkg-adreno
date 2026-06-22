@@ -28,6 +28,10 @@ $(foreach PKG,$(PACKAGES),$(shell \
 		-o -print0 \
 	| cpio -0p ../../../debian/$(PKG))))
 
+execute_after_dh_fixperms:
+	# See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/38
+	chmod -x debian/qcom-adreno-common1/usr/lib/qcom-adreno-common/qcom-adreno-common-vars.sh
+
 override_dh_strip: ;
 
 override_dh_dwz: ;
