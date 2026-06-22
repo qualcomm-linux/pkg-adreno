@@ -5,46 +5,28 @@ export DH_VERBOSE = 1
 %:
 	dh $@
 
+PACKAGES := \
+	    qcom-adreno1 \
+	    qcom-adreno-cl1 \
+	    qcom-adreno-cl-dev \
+	    qcom-adreno-common1 \
+	    qcom-adreno-common-dev \
+	    qcom-adreno-egl1 \
+	    qcom-adreno-egl-dev \
+	    qcom-adreno-gles1 \
+	    qcom-adreno-gles2 \
+	    qcom-adreno-gles-dev \
+	    qcom-adreno-vulkan1 \
+	    qcom-adreno-vulkan-dev
+
 override_dh_auto_install:
-	mkdir -p $(CURDIR)/debian/qcom-adreno1
-	cp -a data/qcom-adreno1/arm64/* $(CURDIR)/debian/qcom-adreno1/
 
-	mkdir -p $(CURDIR)/debian/qcom-adreno-cl1
-	cp -a data/qcom-adreno-cl1/arm64/* $(CURDIR)/debian/qcom-adreno-cl1/
-
-	mkdir -p $(CURDIR)/debian/qcom-adreno-cl-dev
-	cp -a data/qcom-adreno-cl-dev/arm64/* $(CURDIR)/debian/qcom-adreno-cl-dev/
-
-	mkdir -p $(CURDIR)/debian/qcom-adreno-common1
-	cp -a data/qcom-adreno-common1/arm64/* $(CURDIR)/debian/qcom-adreno-common1/
-
-	mkdir -p $(CURDIR)/debian/qcom-adreno-common-dev
-	cp -a data/qcom-adreno-common-dev/arm64/* $(CURDIR)/debian/qcom-adreno-common-dev/
-
-	mkdir -p $(CURDIR)/debian/qcom-adreno-dev
-	cp -a data/qcom-adreno-dev/arm64/* $(CURDIR)/debian/qcom-adreno-dev/
-
-	mkdir -p $(CURDIR)/debian/qcom-adreno-egl1
-	cp -a data/qcom-adreno-egl1/arm64/* $(CURDIR)/debian/qcom-adreno-egl1/
-
-	mkdir -p $(CURDIR)/debian/qcom-adreno-egl-dev
-	cp -a data/qcom-adreno-egl-dev/arm64/* $(CURDIR)/debian/qcom-adreno-egl-dev/
-
-	mkdir -p $(CURDIR)/debian/qcom-adreno-gles1
-	cp -a data/qcom-adreno-gles1/arm64/* $(CURDIR)/debian/qcom-adreno-gles1/
-
-	mkdir -p $(CURDIR)/debian/qcom-adreno-gles2
-	cp -a data/qcom-adreno-gles2/arm64/* $(CURDIR)/debian/qcom-adreno-gles2/
-
-	mkdir -p $(CURDIR)/debian/qcom-adreno-gles-dev
-	cp -a data/qcom-adreno-gles-dev/arm64/* $(CURDIR)/debian/qcom-adreno-gles-dev/
-
-	mkdir -p $(CURDIR)/debian/qcom-adreno-vulkan1
-	cp -a data/qcom-adreno-vulkan1/arm64/* $(CURDIR)/debian/qcom-adreno-vulkan1/
-
-	mkdir -p $(CURDIR)/debian/qcom-adreno-vulkan-dev
-	cp -a data/qcom-adreno-vulkan-dev/arm64/* $(CURDIR)/debian/qcom-adreno-vulkan-dev/
-        :
+$(foreach PKG,$(PACKAGES),$(shell \
+	mkdir -p debian/$(PKG) && (cd data/$(PKG)/arm64/ && find . \
+		-path ./usr/share/doc/$(PKG)/LICENSE.gz -prune \
+		-o -path ./usr/share/doc/$(PKG)/NOTICE.gz -prune \
+		-o -print0 \
+	| cpio -0p ../../../debian/$(PKG))))
 
 override_dh_strip: ;
 
