@@ -198,7 +198,7 @@ Conflicts: adreno-dev
 
 Package: qcom-adreno1
 Architecture: arm64
-Description: Qualcomm Adreno User Mode (meta package)
+Description: Qualcomm Adreno User Mode (metapackage)
  Collection of prebuilt User Mode libraries to support OpenGL ES, Vulkan, and
  OpenCL APIs for Qualcomm Adreno GPUs.
  .
