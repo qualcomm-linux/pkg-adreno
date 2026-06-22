@@ -67,7 +67,7 @@ Conflicts: adreno1
 
 Package: qcom-adreno-cl-dev
 Architecture: arm64
-Description:  Qualcomm Adreno OpenCL User Mode (development files)
+Description: Qualcomm Adreno OpenCL User Mode (development files)
  Collection of prebuilt User Mode libraries to support OpenCL APIs for Qualcomm
  Adreno GPUs.
  .
