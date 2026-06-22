@@ -6,7 +6,6 @@ export DH_VERBOSE = 1
 	dh $@
 
 override_dh_auto_install:
-ifeq ($(DEB_HOST_ARCH),arm64)
 	mkdir -p $(CURDIR)/debian/qcom-adreno1
 	cp -a data/qcom-adreno1/arm64/* $(CURDIR)/debian/qcom-adreno1/
 
@@ -45,7 +44,6 @@ ifeq ($(DEB_HOST_ARCH),arm64)
 
 	mkdir -p $(CURDIR)/debian/qcom-adreno-vulkan-dev
 	cp -a data/qcom-adreno-vulkan-dev/arm64/* $(CURDIR)/debian/qcom-adreno-vulkan-dev/
-endif
         :
 
 override_dh_strip: ;
