@@ -9,7 +9,7 @@ This makes the `script-not-executable` and `executable-in-usr-lib`
 lintian tags disappear.
 
 Signed-off-by: Agathe Porte <agathe.porte@oss.qualcomm.com>
-Forwarded: no
+Forwarded: https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/38
 
 ---
  .../arm64/usr/lib/qcom-adreno-common/qcom-adreno-common-vars.sh | 2 --
