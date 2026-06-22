@@ -1,7 +1,7 @@
 From: Agathe Porte <agathe.porte@oss.qualcomm.com>
 Subject: Fix bash-term-in-posix-shell
 
-Forwarded: no
+Forwarded: https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/39
 
 --- a/data/qcom-adreno-vulkan1/arm64/etc/profile.d/qcom-adreno-vulkan-profile.sh
 +++ b/data/qcom-adreno-vulkan1/arm64/etc/profile.d/qcom-adreno-vulkan-profile.sh
