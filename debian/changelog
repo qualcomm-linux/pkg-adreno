@@ -1,8 +1,12 @@
-qcom-adreno (1.855.5-3~) UNRELEASED; urgency=medium
+qcom-adreno (1.877.1-1) UNRELEASED; urgency=medium
 
+  [ Maintainers.pkg-qcom-adreno ]
   * WIP — update changelog before next release
 
- -- Maintainers.pkg-qcom-adreno <Maintainers.pkg-qcom-adreno@qualcomm.com>  Fri, 05 Jun 2026 12:22:32 +0000
+  [ GitHub Service Bot ]
+  * New upstream release (Artifactory tag: 260623.1)
+
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Wed, 24 Jun 2026 05:09:19 +0000
 
 qcom-adreno (1.855.5-2) resolute; urgency=medium
 
