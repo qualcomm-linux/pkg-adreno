@@ -39,6 +39,7 @@ Depends:
  ${misc:Depends},
  ${shlibs:Depends},
 Conflicts:
+# needed for old Ubuntu packages
  adreno1,
 
 Package: qcom-adreno-common-dev
@@ -52,6 +53,7 @@ Depends:
  qcom-adreno-common1 (= ${binary:Version}),
  ${misc:Depends},
 Conflicts:
+# needed for old Ubuntu packages
  adreno-dev,
  libgsl-dev,
 Provides:
@@ -72,6 +74,7 @@ Depends:
  ${misc:Depends},
  ${shlibs:Depends},
 Conflicts:
+# needed for old Ubuntu packages
  adreno1,
 
 Package: qcom-adreno-cl-dev
@@ -91,6 +94,7 @@ Depends:
  qcom-adreno-common-dev (= ${binary:Version}),
  ${misc:Depends},
 Conflicts:
+# needed for old Ubuntu packages
  adreno-dev,
 
 Package: qcom-adreno-gles1
@@ -109,6 +113,7 @@ Recommends:
  kgsl-dkms,
  libgbm-msm (>= 1.2.5-4),
 Conflicts:
+# needed for old Ubuntu packages
  adreno1,
 
 Package: qcom-adreno-gles2
@@ -127,6 +132,7 @@ Recommends:
  kgsl-dkms,
  libgbm-msm (>= 1.2.5-4),
 Conflicts:
+# needed for old Ubuntu packages
  adreno1,
 
 Package: qcom-adreno-gles-dev
@@ -143,6 +149,7 @@ Depends:
  qcom-adreno-gles2 (= ${binary:Version}),
  ${misc:Depends},
 Conflicts:
+# needed for old Ubuntu packages
  adreno-dev,
 
 Package: qcom-adreno-egl1
@@ -164,6 +171,7 @@ Recommends:
  kgsl-dkms,
  libgbm-msm (>= 1.2.5-4),
 Conflicts:
+# needed for old Ubuntu packages
  adreno1,
 
 Package: qcom-adreno-egl-dev
@@ -180,6 +188,7 @@ Depends:
  qcom-adreno-egl1 (= ${binary:Version}),
  ${misc:Depends},
 Conflicts:
+# needed for old Ubuntu packages
  adreno-dev,
 
 Package: qcom-adreno-vulkan1
@@ -198,6 +207,7 @@ Recommends:
  kgsl-dkms,
  libgbm-msm (>= 1.2.5-4),
 Conflicts:
+# needed for old Ubuntu packages
  adreno1,
 
 Package: qcom-adreno-vulkan-dev
@@ -214,6 +224,7 @@ Depends:
  qcom-adreno-vulkan1 (= ${binary:Version}),
  ${misc:Depends},
 Conflicts:
+# needed for old Ubuntu packages
  adreno-dev,
 
 Package: qcom-adreno1
@@ -233,4 +244,5 @@ Depends:
  ${misc:Depends},
  ${shlibs:Depends},
 Conflicts:
+# needed for old Ubuntu packages
  adreno1,
