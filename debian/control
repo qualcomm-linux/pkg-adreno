@@ -246,3 +246,14 @@ Depends:
 Conflicts:
 # needed for old Ubuntu packages
  adreno1,
+
+Package: qcom-adreno-dev
+Architecture: arm64
+Description: Qualcomm Adreno User Mode (development files)
+ This is a collection of OpenGLES, VUlkan and OpenCL APIs header files
+ supported by qcom-adreno package.
+ .
+ This package provides files necessary to develop programs using the library.
+Section: libdevel
+Depends: qcom-adreno1 (= ${binary:Version}), ${misc:Depends}
+Conflicts: adreno-dev
