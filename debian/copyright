@@ -1,4 +1,11 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Disclaimer:
+ This package is used to distribute closed-source precompiled libraries under
+ the Qualcomm.nologin.binaries.license. The upstream release distributes the
+ Apache-2.0 license for each package, which was factored out:
+ .
+ The full text of the Apache License version 2.0 can be found at
+ /usr/share/common-licenses/Apache-2.0 on debian systems.
 
 Files: *
 Copyright:
