@@ -1,4 +1,4 @@
-qcom-adreno (1.855.5-2) stable; urgency=medium
+qcom-adreno (1.855.5-0qli+staging1~bpo13.1) UNRELEASED; urgency=medium
 
   * Initial release for Debian Trixie.
   * Recompile libraries in Debian Trixie and update package dependencies.
