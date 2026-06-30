@@ -141,7 +141,7 @@ Description: Qualcomm Adreno Vulkan installable client driver (ICD)
  .
  This package provides the Vulkan installable client driver (ICD).
 Depends:
- libvulkan1 (>= 1.4.341.0-1),
+ libvulkan1 (>= 1.2.140),
  adreno-common1 (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
