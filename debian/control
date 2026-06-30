@@ -191,6 +191,6 @@ Description: Qualcomm Adreno Vulkan User Mode (development files)
 Section: libdevel
 Depends:
  libvulkan-dev,
- adreno-common-dev(= ${binary:Version}),
+ adreno-common-dev (= ${binary:Version}),
  adreno-vulkan1 (= ${binary:Version}),
  ${misc:Depends},
