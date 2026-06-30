@@ -3,3 +3,6 @@ source-contains-prebuilt-binary [*]
 
 # This package is non-free, we are expecting missing sources for .so files
 source-is-missing [*]
+
+# Upstream is closed-source and has no useful metadata
+upstream-metadata-file-is-missing
