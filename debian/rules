@@ -5,27 +5,8 @@ export DH_VERBOSE = 1
 %:
 	dh $@
 
-PACKAGES := \
-	    qcom-adreno-cl1 \
-	    qcom-adreno-cl-dev \
-	    qcom-adreno-common1 \
-	    qcom-adreno-common-dev \
-	    qcom-adreno-egl1 \
-	    qcom-adreno-egl-dev \
-	    qcom-adreno-gles1 \
-	    qcom-adreno-gles2 \
-	    qcom-adreno-gles-dev \
-	    qcom-adreno-vulkan1 \
-	    qcom-adreno-vulkan-dev
 
 override_dh_auto_install:
-
-$(foreach PKG,$(PACKAGES),$(shell \
-	mkdir -p debian/$(PKG) && (cd $(PKG)/arm64/ && find . \
-		-path ./usr/share/doc/$(PKG)/LICENSE.gz -prune \
-		-o -path ./usr/share/doc/$(PKG)/NOTICE.gz -prune \
-		-o -print0 \
-	| cpio -0p ../../debian/$(PKG))))
 
 execute_after_dh_fixperms:
 	# See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/38

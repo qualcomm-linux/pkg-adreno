@@ -1,0 +1,4 @@
+qcom-adreno-vulkan1/arm64/usr/lib/aarch64-linux-gnu/* usr/lib/aarch64-linux-gnu
+qcom-adreno-vulkan1/arm64/usr/share/vulkan/* usr/share/vulkan
+qcom-adreno-vulkan1/arm64/usr/lib/environment.d/* usr/lib/environment.d
+qcom-adreno-vulkan1/arm64/usr/lib/qcom-adreno-vulkan/* usr/lib/qcom-adreno-common

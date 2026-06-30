@@ -1,0 +1,4 @@
+qcom-adreno-common1/arm64/etc/profile.d/* etc/profile.d
+qcom-adreno-common1/arm64/usr/lib/aarch64-linux-gnu/* usr/lib/aarch64-linux-gnu
+qcom-adreno-common1/arm64/usr/lib/environment.d/* usr/lib/environment.d
+qcom-adreno-common1/arm64/usr/lib/qcom-adreno-common/* usr/lib/qcom-adreno-common
