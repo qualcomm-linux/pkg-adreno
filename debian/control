@@ -194,20 +194,3 @@ Depends:
  qcom-adreno-common-dev(= ${binary:Version}),
  qcom-adreno-vulkan1 (= ${binary:Version}),
  ${misc:Depends},
-
-Package: qcom-adreno1
-Architecture: arm64
-Description: Qualcomm Adreno User Mode (metapackage)
- Collection of prebuilt User Mode libraries to support OpenGL ES, Vulkan, and
- OpenCL APIs for Qualcomm Adreno GPUs.
- .
- This package depends on libraries required to support all runtime features.
-Depends:
- qcom-adreno-cl1 (= ${binary:Version}),
- qcom-adreno-common1 (= ${binary:Version}),
- qcom-adreno-egl1 (= ${binary:Version}),
- qcom-adreno-gles1 (= ${binary:Version}),
- qcom-adreno-gles2 (= ${binary:Version}),
- qcom-adreno-vulkan1 (= ${binary:Version}),
- ${misc:Depends},
- ${shlibs:Depends},

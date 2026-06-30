@@ -6,7 +6,6 @@ export DH_VERBOSE = 1
 	dh $@
 
 PACKAGES := \
-	    qcom-adreno1 \
 	    qcom-adreno-cl1 \
 	    qcom-adreno-cl-dev \
 	    qcom-adreno-common1 \
