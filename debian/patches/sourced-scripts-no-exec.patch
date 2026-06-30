@@ -16,30 +16,30 @@ Forwarded: https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/38
  .../arm64/etc/profile.d/qcom-adreno-vulkan-profile.sh           | 2 --
  .../arm64/usr/lib/qcom-adreno-vulkan/qcom-adreno-vulkan-vars.sh | 2 --
  3 files changed, 6 deletions(-)
- mode change 100755 => 100644 data/qcom-adreno-common1/arm64/usr/lib/qcom-adreno-common/qcom-adreno-common-vars.sh
+ mode change 100755 => 100644 qcom-adreno-common1/arm64/usr/lib/qcom-adreno-common/qcom-adreno-common-vars.sh
 
---- a/data/qcom-adreno-common1/arm64/usr/lib/qcom-adreno-common/qcom-adreno-common-vars.sh
-+++ b/data/qcom-adreno-common1/arm64/usr/lib/qcom-adreno-common/qcom-adreno-common-vars.sh
+--- a/qcom-adreno-common1/arm64/usr/lib/qcom-adreno-common/qcom-adreno-common-vars.sh
++++ b/qcom-adreno-common1/arm64/usr/lib/qcom-adreno-common/qcom-adreno-common-vars.sh
 @@ -1,3 +1 @@
 -#!/bin/sh
 -
  export QT_QPA_PLATFORM=wayland
---- a/data/qcom-adreno-vulkan1/arm64/etc/profile.d/qcom-adreno-vulkan-profile.sh
-+++ b/data/qcom-adreno-vulkan1/arm64/etc/profile.d/qcom-adreno-vulkan-profile.sh
+--- a/qcom-adreno-vulkan1/arm64/etc/profile.d/qcom-adreno-vulkan-profile.sh
++++ b/qcom-adreno-vulkan1/arm64/etc/profile.d/qcom-adreno-vulkan-profile.sh
 @@ -1,5 +1,3 @@
 -#!/bin/sh
 -
  if [ -f /usr/lib/qcom-adreno-vulkan/qcom-adreno-vulkan-vars.sh ]; then
      source /usr/lib/qcom-adreno-vulkan/qcom-adreno-vulkan-vars.sh
  fi
---- a/data/qcom-adreno-vulkan1/arm64/usr/lib/qcom-adreno-vulkan/qcom-adreno-vulkan-vars.sh
-+++ b/data/qcom-adreno-vulkan1/arm64/usr/lib/qcom-adreno-vulkan/qcom-adreno-vulkan-vars.sh
+--- a/qcom-adreno-vulkan1/arm64/usr/lib/qcom-adreno-vulkan/qcom-adreno-vulkan-vars.sh
++++ b/qcom-adreno-vulkan1/arm64/usr/lib/qcom-adreno-vulkan/qcom-adreno-vulkan-vars.sh
 @@ -1,3 +1 @@
 -#!/bin/sh
 -
  export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/adrenovk.json
---- a/data/qcom-adreno-common1/arm64/etc/profile.d/qcom-adreno-common-profile.sh
-+++ b/data/qcom-adreno-common1/arm64/etc/profile.d/qcom-adreno-common-profile.sh
+--- a/qcom-adreno-common1/arm64/etc/profile.d/qcom-adreno-common-profile.sh
++++ b/qcom-adreno-common1/arm64/etc/profile.d/qcom-adreno-common-profile.sh
 @@ -1,5 +1,3 @@
 -#!/bin/sh
 -

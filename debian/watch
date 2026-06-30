@@ -18,3 +18,4 @@ Source: https://qartifactory-edge.qualcomm.com/artifactory/api/search/artifact?n
 Matching-Pattern: https://qartifactory-edge\.qualcomm\.com/artifactory/api/storage/qsc_releases-cache/software/chip/component/gfx-adreno\.le\.0\.0/[\d.]+/prebuilt_trixie/qcom-adreno_@ANY_VERSION@_arm64@ARCHIVE_EXT@
 Search-Mode: plain
 Downloadurlmangle: s%/api/storage/qsc_releases-cache/%/qsc_releases/%
+Filename-Mangle: s/qcom-adreno/adreno/

@@ -21,11 +21,11 @@ PACKAGES := \
 override_dh_auto_install:
 
 $(foreach PKG,$(PACKAGES),$(shell \
-	mkdir -p debian/$(PKG) && (cd data/$(PKG)/arm64/ && find . \
+	mkdir -p debian/$(PKG) && (cd $(PKG)/arm64/ && find . \
 		-path ./usr/share/doc/$(PKG)/LICENSE.gz -prune \
 		-o -path ./usr/share/doc/$(PKG)/NOTICE.gz -prune \
 		-o -print0 \
-	| cpio -0p ../../../debian/$(PKG))))
+	| cpio -0p ../../debian/$(PKG))))
 
 execute_after_dh_fixperms:
 	# See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/38
