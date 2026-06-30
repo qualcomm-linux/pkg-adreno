@@ -39,23 +39,6 @@ Depends:
  ${misc:Depends},
  ${shlibs:Depends},
 
-Package: adreno-common-dev
-Architecture: arm64
-Description: Qualcomm Adreno Common User Mode (development files)
- Collection of prebuilt common libraries to support Qualcomm Adreno GPUs.
- .
- This package provides files necessary to develop programs using the library.
-Section: libdevel
-Depends:
- adreno-common1 (= ${binary:Version}),
- ${misc:Depends},
-Conflicts:
- libgsl-dev,
-Provides:
- libgsl-dev (= 2.8),
-Replaces:
- libgsl-dev,
-
 Package: adreno-cl1
 Architecture: arm64
 Description: Qualcomm Adreno OpenCL User Mode (runtime library)
