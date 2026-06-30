@@ -38,9 +38,6 @@ Description: Qualcomm Adreno Common User Mode (runtime library)
 Depends:
  ${misc:Depends},
  ${shlibs:Depends},
-Conflicts:
-# needed for old Ubuntu packages
- adreno1,
 
 Package: qcom-adreno-common-dev
 Architecture: arm64
@@ -53,8 +50,6 @@ Depends:
  qcom-adreno-common1 (= ${binary:Version}),
  ${misc:Depends},
 Conflicts:
-# needed for old Ubuntu packages
- adreno-dev,
  libgsl-dev,
 Provides:
  libgsl-dev (= 2.8),
@@ -73,9 +68,6 @@ Depends:
  qcom-adreno-common1 (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
-Conflicts:
-# needed for old Ubuntu packages
- adreno1,
 
 Package: qcom-adreno-cl-dev
 Architecture: arm64
@@ -93,9 +85,6 @@ Depends:
  qcom-adreno-cl1 (= ${binary:Version}),
  qcom-adreno-common-dev (= ${binary:Version}),
  ${misc:Depends},
-Conflicts:
-# needed for old Ubuntu packages
- adreno-dev,
 
 Package: qcom-adreno-gles1
 Architecture: arm64
@@ -112,9 +101,6 @@ Depends:
 Recommends:
  kgsl-dkms,
  libgbm-msm (>= 1.2.5-4),
-Conflicts:
-# needed for old Ubuntu packages
- adreno1,
 
 Package: qcom-adreno-gles2
 Architecture: arm64
@@ -131,9 +117,6 @@ Depends:
 Recommends:
  kgsl-dkms,
  libgbm-msm (>= 1.2.5-4),
-Conflicts:
-# needed for old Ubuntu packages
- adreno1,
 
 Package: qcom-adreno-gles-dev
 Architecture: arm64
@@ -148,9 +131,6 @@ Depends:
  qcom-adreno-gles1 (= ${binary:Version}),
  qcom-adreno-gles2 (= ${binary:Version}),
  ${misc:Depends},
-Conflicts:
-# needed for old Ubuntu packages
- adreno-dev,
 
 Package: qcom-adreno-egl1
 Architecture: arm64
@@ -170,9 +150,6 @@ Depends:
 Recommends:
  kgsl-dkms,
  libgbm-msm (>= 1.2.5-4),
-Conflicts:
-# needed for old Ubuntu packages
- adreno1,
 
 Package: qcom-adreno-egl-dev
 Architecture: arm64
@@ -187,9 +164,6 @@ Depends:
  qcom-adreno-common-dev (= ${binary:Version}),
  qcom-adreno-egl1 (= ${binary:Version}),
  ${misc:Depends},
-Conflicts:
-# needed for old Ubuntu packages
- adreno-dev,
 
 Package: qcom-adreno-vulkan1
 Architecture: arm64
@@ -206,9 +180,6 @@ Depends:
 Recommends:
  kgsl-dkms,
  libgbm-msm (>= 1.2.5-4),
-Conflicts:
-# needed for old Ubuntu packages
- adreno1,
 
 Package: qcom-adreno-vulkan-dev
 Architecture: arm64
@@ -223,9 +194,6 @@ Depends:
  qcom-adreno-common-dev(= ${binary:Version}),
  qcom-adreno-vulkan1 (= ${binary:Version}),
  ${misc:Depends},
-Conflicts:
-# needed for old Ubuntu packages
- adreno-dev,
 
 Package: qcom-adreno1
 Architecture: arm64
@@ -243,9 +211,6 @@ Depends:
  qcom-adreno-vulkan1 (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
-Conflicts:
-# needed for old Ubuntu packages
- adreno1,
 
 Package: qcom-adreno-dev
 Architecture: arm64
@@ -256,5 +221,3 @@ Description: Qualcomm Adreno User Mode (empty package)
  This package is empty and used for backward compatibility for Ubuntu.
 Section: libdevel
 Depends: qcom-adreno1 (= ${binary:Version}), ${misc:Depends}
-# needed for old Ubuntu packages
-Conflicts: adreno-dev
