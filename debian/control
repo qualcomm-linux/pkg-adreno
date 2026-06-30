@@ -118,20 +118,6 @@ Recommends:
  kgsl-dkms,
  libgbm-msm (>= 1.2.5-4),
 
-Package: adreno-gles-dev
-Architecture: arm64
-Description: Qualcomm Adreno OpenGLES User Mode (development files)
- Collection of prebuilt User Mode libraries to support OpenGL ES APIs for
- Qualcomm Adreno GPUs.
- .
- This package provides files necessary to develop programs using the library.
-Section: libdevel
-Depends:
- adreno-common-dev (= ${binary:Version}),
- adreno-gles1 (= ${binary:Version}),
- adreno-gles2 (= ${binary:Version}),
- ${misc:Depends},
-
 Package: adreno-egl1
 Architecture: arm64
 Description: Qualcomm Adreno EGL User Mode (runtime library)
@@ -151,20 +137,6 @@ Recommends:
  kgsl-dkms,
  libgbm-msm (>= 1.2.5-4),
 
-Package: adreno-egl-dev
-Architecture: arm64
-Description: Qualcomm Adreno EGL User Mode (development files)
- Collection of prebuilt User Mode libraries to support EGL APIs for
- Qualcomm Adreno GPUs.
- .
- This package provides files necessary to develop programs using the library.
-Section: libdevel
-Depends:
- libglvnd-dev,
- adreno-common-dev (= ${binary:Version}),
- adreno-egl1 (= ${binary:Version}),
- ${misc:Depends},
-
 Package: adreno-vulkan1
 Architecture: arm64
 Description: Qualcomm Adreno Vulkan User Mode (runtime library)
@@ -180,17 +152,3 @@ Depends:
 Recommends:
  kgsl-dkms,
  libgbm-msm (>= 1.2.5-4),
-
-Package: adreno-vulkan-dev
-Architecture: arm64
-Description: Qualcomm Adreno Vulkan User Mode (development files)
- Collection of prebuilt User Mode libraries to support Vulkan APIs for
- Qualcomm Adreno GPUs.
- .
- This package provides files necessary to develop programs using the library.
-Section: libdevel
-Depends:
- libvulkan-dev,
- adreno-common-dev (= ${binary:Version}),
- adreno-vulkan1 (= ${binary:Version}),
- ${misc:Depends},
