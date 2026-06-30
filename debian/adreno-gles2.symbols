@@ -1,5 +1,5 @@
-libGLESv2_adreno.so.2 qcom-adreno-gles2 #MINVER#
-* Build-Depends-Package: qcom-adreno-glesc-dev
+libGLESv2_adreno.so.2 adreno-gles2 #MINVER#
+* Build-Depends-Package: adreno-glesc-dev
  InitEsx@Base 1.855.5
  InitEsxProfile@Base 1.855.5
  _Z10EsxReallocPvmj10EsxMemType@Base 1.855.5

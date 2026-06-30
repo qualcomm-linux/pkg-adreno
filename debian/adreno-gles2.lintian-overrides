@@ -1,4 +1,7 @@
-qcom-adreno-gles1: package-name-doesnt-match-sonames libGLESv1-CM-adreno1
+adreno-gles2: package-name-doesnt-match-sonames libGLESv2-adreno2
+
+# Let’s ignore spelling errors for now
+spelling-error-in-binary *
 
 # We do not want to tinker the big copyright notice
 # See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/40

@@ -1,4 +1,4 @@
-qcom-adreno-vulkan1: package-name-doesnt-match-sonames libvulkan-adreno1
+adreno-cl1: package-name-doesnt-match-sonames libCB1 libOpenCL-adreno1
 
 # Let’s ignore spelling mistakes for now
 spelling-error-in-binary

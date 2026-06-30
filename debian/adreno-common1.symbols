@@ -1,5 +1,5 @@
-libadreno_utils.so.1 qcom-adreno-common1 #MINVER#
-* Build-Depends-Package: qcom-adreno-common-dev
+libadreno_utils.so.1 adreno-common1 #MINVER#
+* Build-Depends-Package: adreno-common-dev
  adreno_get_aligned_gpu_buffer_size@Base 1.855.5
  adreno_get_metadata_blob_size@Base 1.855.5
  adreno_init_memory_layout@Base 1.855.5
@@ -24,8 +24,8 @@ libadreno_utils.so.1 qcom-adreno-common1 #MINVER#
  uuid_to_str@Base 1.855.5
  validate_resource_memory_layout_metadata@Base 1.855.5
  validate_surface_metadata@Base 1.855.5
-libgsl.so.1 qcom-adreno-common1 #MINVER#
-* Build-Depends-Package: qcom-adreno-common-dev
+libgsl.so.1 adreno-common1 #MINVER#
+* Build-Depends-Package: adreno-common-dev
  g_alogAssertLog@Base 1.855.5
  g_alogDebugMask@Base 1.855.5
  g_alogLowPerfAssertFlag@Base 1.855.5
@@ -255,8 +255,8 @@ libgsl.so.1 qcom-adreno-common1 #MINVER#
  os_window_getdimensions@Base 1.855.5
  os_window_validate@Base 1.855.5
  set_hw_specific_panel_settings@Base 1.855.5
-libllvm-glnext.so.1 qcom-adreno-common1 #MINVER#
-* Build-Depends-Package: qcom-adreno-common-dev
+libllvm-glnext.so.1 adreno-common1 #MINVER#
+* Build-Depends-Package: adreno-common-dev
  LoadACC@Base 1.855.5
  _ZN15CompilerContextC1EPN12QGPUCompiler7ContextE@Base 1.855.5
  _ZN15CompilerContextC2EPN12QGPUCompiler7ContextE@Base 1.855.5
@@ -302,8 +302,8 @@ libllvm-glnext.so.1 qcom-adreno-common1 #MINVER#
  _ZTSNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@Base 1.855.5
  _ZTSSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE@Base 1.855.5
  _ZTSSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE@Base 1.855.5
-libllvm-qcom.so.1 qcom-adreno-common1 #MINVER#
-* Build-Depends-Package: qcom-adreno-common-dev
+libllvm-qcom.so.1 adreno-common1 #MINVER#
+* Build-Depends-Package: adreno-common-dev
  LoadLLC@Base 1.855.5
  LoadQCLC@Base 1.855.5
  _Z58cl_compiler_validate_precompiled_binary_obj_format_versionPKcm18cl_compiler_targetj@Base 1.855.5
@@ -444,8 +444,8 @@ libllvm-qcom.so.1 qcom-adreno-common1 #MINVER#
  cl_compiler_query_handle_type@Base 1.855.5
  cl_compiler_query_version_string@Base 1.855.5
  cl_compiler_repackage_binary@Base 1.855.5
-libllvm-qgl.so.1 qcom-adreno-common1 #MINVER#
-* Build-Depends-Package: qcom-adreno-common-dev
+libllvm-qgl.so.1 adreno-common1 #MINVER#
+* Build-Depends-Package: adreno-common-dev
  LoadLLC@Base 1.855.5
  LoadQCC@Base 1.855.5
  _ZN15CompilerContextC1EPN12QGPUCompiler7ContextE@Base 1.855.5
@@ -575,8 +575,8 @@ libllvm-qgl.so.1 qcom-adreno-common1 #MINVER#
  _ZZNSt9once_flag18_Prepare_executionC4IZSt9call_onceIZN4llvm4QGPU3Asm14AttributeTableINS5_6OpcodeENS5_11OpcodeAttrsEEC4EvEUlvE_JEEvRS_OT_DpOT0_EUlvE_EERSC_ENUlvE_4_FUNEv@Base 1.855.5
  _ZZNSt9once_flag18_Prepare_executionC4IZSt9call_onceIZN4llvm4QGPU3Asm14AttributeTableINS5_7KeywordENS5_12KeywordAttrsEEC4EvEUlvE_JEEvRS_OT_DpOT0_EUlvE_EERSC_ENUlvE_4_FUNEv@Base 1.855.5
  _ZZNSt9once_flag18_Prepare_executionC4IZSt9call_onceIZN4llvm4QGPU3Asm14AttributeTableINS5_8MnemonicENS5_13MnemonicAttrsEEC4EvEUlvE_JEEvRS_OT_DpOT0_EUlvE_EERSC_ENUlvE_4_FUNEv@Base 1.855.5
-libq3dtools_adreno.so.1 qcom-adreno-common1 #MINVER#
-* Build-Depends-Package: qcom-adreno-common-dev
+libq3dtools_adreno.so.1 adreno-common1 #MINVER#
+* Build-Depends-Package: adreno-common-dev
  DebugPrint@Base 1.855.5
  GetLibraryPathC@Base 1.855.5
  _Z10EsxReallocPvmj10EsxMemType@Base 1.855.5
@@ -1175,8 +1175,8 @@ libq3dtools_adreno.so.1 qcom-adreno-common1 #MINVER#
  qxpRegisterCB@Base 1.855.5
  qxpSendData@Base 1.855.5
  qxpSetBlockingMode@Base 1.855.5
-libq3dtools_esx.so.1 qcom-adreno-common1 #MINVER#
-* Build-Depends-Package: qcom-adreno-common-dev
+libq3dtools_esx.so.1 adreno-common1 #MINVER#
+* Build-Depends-Package: adreno-common-dev
  InitializeProfiler@Base 1.855.5
  ShutdownProfiler@Base 1.855.5
  UpdateProfiler@Base 1.855.5

@@ -1,5 +1,5 @@
-libGLESv1_CM_adreno.so.1 qcom-adreno-gles1 #MINVER#
-* Build-Depends-Package: qcom-adreno-gles1-dev
+libGLESv1_CM_adreno.so.1 adreno-gles1 #MINVER#
+* Build-Depends-Package: adreno-gles1-dev
  InitClient@Base 1.855.5
  glActiveTexture@Base 1.855.5
  glAlphaFactorfATI@Base 1.855.5

@@ -1,5 +1,5 @@
-libCB.so.1 qcom-adreno-cl1 #MINVER#
-* Build-Depends-Package: qcom-adreno-cl-dev
+libCB.so.1 adreno-cl1 #MINVER#
+* Build-Depends-Package: adreno-cl-dev
  _Z23cb_set_runtime_samplersP11_cl_contextPv@Base 1.855.5
  _Z29cb_common_lock_compiler_mutexPKcS0_j@Base 1.855.5
  _Z31cb_common_unlock_compiler_mutexv@Base 1.855.5
@@ -248,8 +248,8 @@ libCB.so.1 qcom-adreno-cl1 #MINVER#
  clGetExtensionFunctionAddress@Base 1.855.5
  clGetPlatformInfo@Base 1.855.5
  clIcdGetPlatformIDsKHR@Base 1.855.5
-libOpenCL_adreno.so.1 qcom-adreno-cl1 #MINVER#
-* Build-Depends-Package: qcom-adreno-cl-dev
+libOpenCL_adreno.so.1 adreno-cl1 #MINVER#
+* Build-Depends-Package: adreno-cl-dev
  clGetExtensionFunctionAddress@Base 1.855.5
  clGetPlatformInfo@Base 1.855.5
  clIcdGetPlatformIDsKHR@Base 1.855.5

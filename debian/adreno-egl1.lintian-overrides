@@ -1,7 +1,4 @@
-qcom-adreno-gles2: package-name-doesnt-match-sonames libGLESv2-adreno2
-
-# Let’s ignore spelling errors for now
-spelling-error-in-binary *
+adreno-egl1: package-name-doesnt-match-sonames libEGL-adreno1 libeglSubDriverWayland1 libeglSubDriverX11-1
 
 # We do not want to tinker the big copyright notice
 # See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/40

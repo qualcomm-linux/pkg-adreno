@@ -1,5 +1,5 @@
-libEGL_adreno.so.1 qcom-adreno-egl1 #MINVER#
-* Build-Depends-Package: qcom-adreno-egl1-dev
+libEGL_adreno.so.1 adreno-egl1 #MINVER#
+* Build-Depends-Package: adreno-egl1-dev
  EglSubDriverHelperAddFenceEvent@Base 1.855.5
  EglSubDriverHelperAllocSubResPlanes@Base 1.855.5
  EglSubDriverHelperAllocTimestampInfo@Base 1.855.5
@@ -158,8 +158,8 @@ libEGL_adreno.so.1 qcom-adreno-egl1 #MINVER#
  eglWaitSync@Base 1.855.5
  eglWaitSyncKHR@Base 1.855.5
  g_esxDbgInfo@Base 1.855.5
-libeglSubDriverWayland.so.1 qcom-adreno-egl1 #MINVER#
-* Build-Depends-Package: qcom-adreno-egl1-dev
+libeglSubDriverWayland.so.1 adreno-egl1 #MINVER#
+* Build-Depends-Package: adreno-egl1-dev
  CreateSubDriver@Base 1.855.5
  GetSubDriverVersion@Base 1.855.5
  _Z10EsxReallocPvmj10EsxMemType@Base 1.855.5
@@ -191,8 +191,8 @@ libeglSubDriverWayland.so.1 qcom-adreno-egl1 #MINVER#
  zwp_linux_buffer_params_v1_interface@Base 1.855.5
  zwp_linux_dmabuf_feedback_v1_interface@Base 1.855.5
  zwp_linux_dmabuf_v1_interface@Base 1.855.5
-libeglSubDriverX11.so.1 qcom-adreno-egl1 #MINVER#
-* Build-Depends-Package: qcom-adreno-egl1-dev
+libeglSubDriverX11.so.1 adreno-egl1 #MINVER#
+* Build-Depends-Package: adreno-egl1-dev
  CreateSubDriver@Base 1.855.5
  GetSubDriverVersion@Base 1.855.5
  _Z10EsxReallocPvmj10EsxMemType@Base 1.855.5
