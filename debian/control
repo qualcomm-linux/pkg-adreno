@@ -211,13 +211,3 @@ Depends:
  qcom-adreno-vulkan1 (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
-
-Package: qcom-adreno-dev
-Architecture: arm64
-Description: Qualcomm Adreno User Mode (empty package)
- This is a collection of OpenGLES, VUlkan and OpenCL APIs header files
- supported by qcom-adreno package.
- .
- This package is empty and used for backward compatibility for Ubuntu.
-Section: libdevel
-Depends: qcom-adreno1 (= ${binary:Version}), ${misc:Depends}
