@@ -79,7 +79,7 @@ Depends:
  ${shlibs:Depends},
 Recommends:
  kgsl-dkms,
- libgbm-msm (>= 1.2.5-4),
+ libgbm-msm1,
 
 Package: adreno-gles2
 Architecture: arm64
@@ -95,7 +95,7 @@ Depends:
  ${shlibs:Depends},
 Recommends:
  kgsl-dkms,
- libgbm-msm (>= 1.2.5-4),
+ libgbm-msm1,
 
 Package: adreno-egl1
 Architecture: arm64
@@ -114,7 +114,7 @@ Depends:
  ${shlibs:Depends},
 Recommends:
  kgsl-dkms,
- libgbm-msm (>= 1.2.5-4),
+ libgbm-msm1,
 
 Package: adreno-vulkan-icd
 Architecture: arm64
@@ -130,4 +130,4 @@ Depends:
  ${shlibs:Depends},
 Recommends:
  kgsl-dkms,
- libgbm-msm (>= 1.2.5-4),
+ libgbm-msm1,
