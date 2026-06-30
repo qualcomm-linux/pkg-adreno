@@ -69,21 +69,17 @@ Depends:
  ${misc:Depends},
  ${shlibs:Depends},
 
-Package: adreno-cl-dev
+Package: adreno-opencl-dev
 Architecture: arm64
-Description: Qualcomm Adreno OpenCL User Mode (development files)
- Collection of prebuilt User Mode libraries to support OpenCL APIs for Qualcomm
- Adreno GPUs.
+Description: Qualcomm Adreno GPU userspace driver - OpenCL headers
+ Adreno provides hardware acceleration through Collection of prebuilt
+ User Mode libraries to support OpenCL APIs for Qualcomm Adreno GPUs.
  .
- This package provides files necessary to develop programs using the library.
+ This package provides the Qualcomm vendor extension headers
+ (cl_ext_qcom.h) for OpenCL on Adreno.
 Section: libdevel
 Depends:
  ocl-icd-opencl-dev,
- opencl-c-headers,
- opencl-clhpp-headers,
- opencl-headers,
- adreno-cl1 (= ${binary:Version}),
- adreno-common-dev (= ${binary:Version}),
  ${misc:Depends},
 
 Package: adreno-gles1
