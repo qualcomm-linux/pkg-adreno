@@ -1,4 +1,4 @@
-adreno-common1: package-name-doesnt-match-sonames libadreno-utils1 libgsl1 libllvm-glnext1 libllvm-qcom1 libllvm-qgl1 libq3dtools-adreno1 libq3dtools-esx1
+adreno-common: package-name-doesnt-match-sonames libadreno-utils1 libgsl1 libllvm-glnext1 libllvm-qcom1 libllvm-qgl1 libq3dtools-adreno1 libq3dtools-esx1
 
 # We do not have control of which flags are used during build
 hardening-no-fortify-functions

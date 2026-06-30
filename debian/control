@@ -28,7 +28,7 @@ Homepage: https://www.qualcomm.com/processors/adreno
 Vcs-Browser: https://github.com/qualcomm-linux/pkg-qcom-adreno
 Vcs-Git: https://github.com/qualcomm-linux/pkg-qcom-adreno.git
 
-Package: adreno-common1
+Package: adreno-common
 Architecture: arm64
 Description: Qualcomm Adreno Common User Mode (runtime library)
  Collection of prebuilt common libraries to support Qualcomm Adreno GPUs.
@@ -37,6 +37,7 @@ Description: Qualcomm Adreno Common User Mode (runtime library)
 Depends:
  ${misc:Depends},
  ${shlibs:Depends},
+
 
 Package: adreno-cl1
 Architecture: arm64
@@ -47,7 +48,7 @@ Description: Qualcomm Adreno OpenCL User Mode (runtime library)
  This package provides the runtime library.
 Depends:
  ocl-icd-libopencl1,
- adreno-common1 (= ${binary:Version}),
+ adreno-common (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
 
@@ -73,7 +74,7 @@ Description: Qualcomm Adreno OpenGLESv1 User Mode (runtime library)
  This package provides the runtime library.
 Depends:
  libgles1 (>= 1.7.0),
- adreno-common1 (= ${binary:Version}),
+ adreno-common (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
 Recommends:
@@ -89,7 +90,7 @@ Description: Qualcomm Adreno OpenGLESv2 User Mode (runtime library)
  This package provides the runtime library.
 Depends:
  libgles2 (>= 1.7.0),
- adreno-common1 (= ${binary:Version}),
+ adreno-common (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
 Recommends:
@@ -106,7 +107,7 @@ Description: Qualcomm Adreno EGL User Mode (runtime library)
 Depends:
  libegl1 (>= 1.7.0),
  libglvnd0 (>= 1.7.0),
- adreno-common1 (= ${binary:Version}),
+ adreno-common (= ${binary:Version}),
  adreno-gles1 (= ${binary:Version}),
  adreno-gles2 (= ${binary:Version}),
  ${misc:Depends},
@@ -124,7 +125,7 @@ Description: Qualcomm Adreno Vulkan installable client driver (ICD)
  This package provides the Vulkan installable client driver (ICD).
 Depends:
  libvulkan1 (>= 1.2.140),
- adreno-common1 (= ${binary:Version}),
+ adreno-common (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
 Recommends:
