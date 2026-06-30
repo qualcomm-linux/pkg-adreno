@@ -133,13 +133,13 @@ Recommends:
  kgsl-dkms,
  libgbm-msm (>= 1.2.5-4),
 
-Package: adreno-vulkan1
+Package: adreno-vulkan-icd
 Architecture: arm64
-Description: Qualcomm Adreno Vulkan User Mode (runtime library)
+Description: Qualcomm Adreno Vulkan installable client driver (ICD)
  Collection of prebuilt User Mode libraries to support Vulkan APIs for
  Qualcomm Adreno GPUs.
  .
- This package provides the runtime library.
+ This package provides the Vulkan installable client driver (ICD).
 Depends:
  libvulkan1 (>= 1.4.341.0-1),
  adreno-common1 (= ${binary:Version}),
