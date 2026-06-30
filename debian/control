@@ -8,7 +8,6 @@ Build-Depends:
  dh-exec,
  libdrm-dev (>= 2.4.124-2),
  libgbm-dev (>= 25.0.7-2),
- libgbm1 (>= 25.0.7-2),
  libglib2.0-dev (>= 2.84.4-3~deb13u2),
  libglvnd-dev (>= 1.7.0-1+b2),
  libwayland-bin (>= 1.23.1-3),
