@@ -39,7 +39,7 @@ Depends:
  ${shlibs:Depends},
 
 
-Package: adreno-cl1
+Package: adreno-opencl-icd
 Architecture: arm64
 Description: Qualcomm Adreno OpenCL User Mode (runtime library)
  Collection of prebuilt User Mode libraries to support OpenCL APIs for Qualcomm
