@@ -10,8 +10,8 @@ override_dh_auto_install:
 
 execute_after_dh_fixperms:
 	# See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/38
-	chmod -x debian/adreno-common1/usr/lib/adreno-common/adreno-common-vars.sh
-	chmod -x debian/adreno-common1/etc/profile.d/adreno-common-profile.sh
+	chmod -x debian/adreno-common/usr/lib/adreno-common/adreno-common-vars.sh
+	chmod -x debian/adreno-common/etc/profile.d/adreno-common-profile.sh
 
 override_dh_strip: ;
 

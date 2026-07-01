@@ -1,7 +1,0 @@
-/usr/lib/${DEB_HOST_MULTIARCH}/libadreno_utils.so.1 /usr/lib/${DEB_HOST_MULTIARCH}/libadreno_utils.so
-/usr/lib/${DEB_HOST_MULTIARCH}/libgsl.so.1 /usr/lib/${DEB_HOST_MULTIARCH}/libgsl.so
-/usr/lib/${DEB_HOST_MULTIARCH}/libllvm-glnext.so.1 /usr/lib/${DEB_HOST_MULTIARCH}/libllvm-glnext.so
-/usr/lib/${DEB_HOST_MULTIARCH}/libllvm-qcom.so.1 /usr/lib/${DEB_HOST_MULTIARCH}/libllvm-qcom.so
-/usr/lib/${DEB_HOST_MULTIARCH}/libllvm-qgl.so.1 /usr/lib/${DEB_HOST_MULTIARCH}/libllvm-qgl.so
-/usr/lib/${DEB_HOST_MULTIARCH}/libq3dtools_adreno.so.1 /usr/lib/${DEB_HOST_MULTIARCH}/libq3dtools_adreno.so
-/usr/lib/${DEB_HOST_MULTIARCH}/libq3dtools_esx.so.1 /usr/lib/${DEB_HOST_MULTIARCH}/libq3dtools_esx.so
