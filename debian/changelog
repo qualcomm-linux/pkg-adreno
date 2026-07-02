@@ -1,5 +1,6 @@
-adreno (1.855.5-0qli+staging1~) UNRELEASED; urgency=medium
+adreno (1.855.5-0qli+staging1) forky; urgency=medium
 
+  [ Agathe Porte ]
   * Initial release
 
- -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Thu, 18 Jun 2026 14:43:29 +0200
+ -- root <root@c6243c9c400c>  Thu, 02 Jul 2026 09:29:49 +0000
