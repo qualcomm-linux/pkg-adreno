@@ -1,0 +1,5 @@
+adreno-gles1: package-name-doesnt-match-sonames libGLESv1-CM-adreno1
+
+# We do not want to tinker the big copyright notice
+# See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/40
+old-fsf-address-in-copyright-file

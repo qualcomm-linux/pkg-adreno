@@ -1,1 +1,0 @@
-qcom-adreno-egl1: package-name-doesnt-match-sonames libEGL-adreno1 libeglSubDriverWayland1 libeglSubDriverX11-1

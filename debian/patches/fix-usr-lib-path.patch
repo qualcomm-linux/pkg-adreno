@@ -1,0 +1,25 @@
+From: Agathe Porte <agathe.porte@oss.qualcomm.com>
+Subject: [PATCH] Remove qcom-* prefix from shell files
+
+To respect having a path on the system that matches the package name, fix the
+sourced paths in the etc/profile.d files to refer to the new installed location
+that differs from upstream.
+
+Forwarded: not-needed
+
+--- a/qcom-adreno-common1/arm64/etc/profile.d/qcom-adreno-common-profile.sh
++++ b/qcom-adreno-common1/arm64/etc/profile.d/qcom-adreno-common-profile.sh
+@@ -1,3 +1,3 @@
+-if [ -f /usr/lib/qcom-adreno-common/qcom-adreno-common-vars.sh ]; then
+-    . /usr/lib/qcom-adreno-common/qcom-adreno-common-vars.sh
++if [ -f /usr/lib/adreno-common/adreno-common-vars.sh ]; then
++    . /usr/lib/adreno-common/adreno-common-vars.sh
+ fi
+--- a/qcom-adreno-vulkan1/arm64/etc/profile.d/qcom-adreno-vulkan-profile.sh
++++ b/qcom-adreno-vulkan1/arm64/etc/profile.d/qcom-adreno-vulkan-profile.sh
+@@ -1,3 +1,3 @@
+-if [ -f /usr/lib/qcom-adreno-vulkan/qcom-adreno-vulkan-vars.sh ]; then
+-    . /usr/lib/qcom-adreno-vulkan/qcom-adreno-vulkan-vars.sh
++if [ -f /usr/lib/adreno-vulkan/adreno-vulkan-vars.sh ]; then
++    . /usr/lib/adreno-vulkan/adreno-vulkan-vars.sh
+ fi

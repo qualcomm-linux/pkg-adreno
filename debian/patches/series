@@ -1,0 +1,3 @@
+sourced-scripts-no-exec.patch
+bash-term-in-posix-shell.patch
+fix-usr-lib-path.patch
