@@ -1,8 +1,8 @@
-adreno (1.855.5-0qli+staging1~bpo13.1) UNRELEASED; urgency=medium
+adreno (1.855.5-0qli+staging1~bpo13.1) trixie; urgency=medium
 
   * Unreleased changes
 
- -- root <root@1517beeb0cec>  Thu, 02 Jul 2026 09:32:54 +0000
+ -- root <root@716e210b0552>  Thu, 02 Jul 2026 11:53:05 +0000
 
 adreno (1.855.5-0qli+staging1) forky; urgency=medium
 
