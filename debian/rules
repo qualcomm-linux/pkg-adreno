@@ -16,3 +16,19 @@ execute_after_dh_fixperms:
 override_dh_strip: ;
 
 override_dh_dwz: ;
+
+maintainerclean:
+	rm -r \
+		qcom-adreno-cl-dev \
+		qcom-adreno-cl1 \
+		qcom-adreno-common-dev \
+		qcom-adreno-common1 \
+		qcom-adreno-dev \
+		qcom-adreno-egl-dev \
+		qcom-adreno-egl1 \
+		qcom-adreno-gles-dev \
+		qcom-adreno-gles1 \
+		qcom-adreno-gles2 \
+		qcom-adreno-vulkan-dev \
+		qcom-adreno-vulkan1 \
+		qcom-adreno1
