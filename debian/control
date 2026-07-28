@@ -5,6 +5,7 @@ Uploaders:
  Agathe Porte <agathe.porte@oss.qualcomm.com>,
 Build-Depends:
  debhelper-compat (= 13),
+Build-Depends-Arch:
  dh-exec,
  libdrm-dev (>= 2.4.124-2),
  libgbm-dev (>= 25.0.7-2),
