@@ -5,7 +5,11 @@ adreno (1.855.6-0qli+staging3~) UNRELEASED; urgency=medium
     - Drop patches bash-term-in-posix-shell and sourced-scripts-no-exec
       as these were fixed upstream; fixes: #38, #39.
 
- -- Debusine Action GitHub Bot <noreply@bot.invalid>  Thu, 02 Jul 2026 11:52:18 +0000
+  [ Agathe Porte ]
+  * d/gbp.conf: drop upstream branch, there is none
+  * d/control: use B-D-A
+
+ -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Tue, 28 Jul 2026 13:32:28 +0200
 
 adreno (1.855.5-0qli+staging2) forky; urgency=medium
 
