@@ -5,17 +5,17 @@ adreno (1.855.6-0qli+staging3~) UNRELEASED; urgency=medium
     - Drop patches bash-term-in-posix-shell and sourced-scripts-no-exec
       as these were fixed upstream; fixes: #38, #39.
 
- -- root <root@47798a2e0db4>  Thu, 02 Jul 2026 11:52:18 +0000
+ -- Debusine Action GitHub Bot <noreply@bot.invalid>  Thu, 02 Jul 2026 11:52:18 +0000
 
 adreno (1.855.5-0qli+staging2) forky; urgency=medium
 
   * Unreleased changes
 
- -- root <root@dfb7151e5296>  Thu, 02 Jul 2026 11:49:11 +0000
+ -- Debusine Action GitHub Bot <noreply@bot.invalid>  Thu, 02 Jul 2026 11:49:11 +0000
 
 adreno (1.855.5-0qli+staging1) forky; urgency=medium
 
   [ Agathe Porte ]
   * Initial release
 
- -- root <root@c6243c9c400c>  Thu, 02 Jul 2026 09:29:49 +0000
+ -- Debusine Action GitHub Bot <noreply@bot.invalid>  Thu, 02 Jul 2026 09:29:49 +0000
