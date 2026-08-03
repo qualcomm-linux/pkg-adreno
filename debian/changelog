@@ -1,7 +1,19 @@
 qcom-adreno (1.877.3-1) UNRELEASED; urgency=medium
 
   [ Maintainers.pkg-qcom-adreno ]
-  * Fix copyright format. 
+  * Enhance DMA-BUF and external memory interoperability, including improved
+    allocation, import, and handle-type support (DMA_BUF, OPAQUE_FD).
+  * Improve buffer management through updated metadata, file descriptor
+    handling, and UBWC flag-buffer offset support.
+  * Optimize GBM buffer import by using accurate pixel dimensions and format
+    iinformation.
+  * Enable Linux DMA-BUF protocol and Wayland integration features to improve
+    buffer sharing and graphics interoperability.
+  * Expand graphics extension support and conformance compatibility
+    improvements across supported devices.
+  * Fix GPU instruction validation errors during OpenCL program builds like
+    OpenCL SDK samples.
+  * Enable OpenCL perf_hint and priority_hint extensions for Hamoa and Glymur.
 
   [ GitHub Service Bot ]
   * New upstream release (Artifactory tag: 260803)
