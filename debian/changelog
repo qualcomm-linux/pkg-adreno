@@ -1,4 +1,4 @@
-qcom-adreno (1.877.3-1) UNRELEASED; urgency=medium
+qcom-adreno (1.877.3-1) resolute; urgency=medium
 
   [ Maintainers.pkg-qcom-adreno ]
   * Enhance DMA-BUF and external memory interoperability, including improved
@@ -18,7 +18,7 @@ qcom-adreno (1.877.3-1) UNRELEASED; urgency=medium
   [ GitHub Service Bot ]
   * New upstream release (Artifactory tag: 260803)
 
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Mon, 03 Aug 2026 10:22:16 +0000
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Tue, 04 Aug 2026 20:49:03 +0000
 
 qcom-adreno (1.877.1-2) resolute; urgency=medium
 
