@@ -1,9 +1,42 @@
-adreno (1.855.6-0qli+staging3~) UNRELEASED; urgency=medium
+adreno (1.877.3-0qli+staging3~) UNRELEASED; urgency=medium
 
   [ Sai Sumanth Sadhula ]
   * New upstream release
     - Drop patches bash-term-in-posix-shell and sourced-scripts-no-exec
       as these were fixed upstream; fixes: #38, #39.
+    - Rename and relocate libraries to adreno sub-directory; fixes: #55.
+    - Vulkan:
+      - Enable VK_EXT_external_memory_dma_buf on Linux targets and add
+        zwp_linux_dmabuf protocol support for Wayland DMA-BUF buffer sharing.
+      - Add B10G10R10A2_UNORM and B8G8R8A8_UNORM_SRGB as new Linux surface
+        formats required by gnome-shell and graphics benchmarks.
+      - Implement dynamic selection between DRI3 and DRIless presentation paths,
+        with correct compositeAlpha flag handling for Wayland swapchain format
+        selection.
+      - Fix OOM error propagation during Wayland surface initialization, resolve
+        X11 window resize event handling and XCB pixmap resource leaks.
+    - OpenGL ES:
+      - Enable DRI3 presentation by default with an environment toggle
+        (DISABLE_DRI3) and robust fallback to improve Linux desktop display
+        performance.
+      - Refactor Wayland buffer backend and wl_drm protocol handling.
+      - Add zwp protocol integration to improve Wayland interoperability.
+      - Fix GBM buffer object CPU mapping validation and align GBM buffer
+        mapping/unmapping behavior to prevent invalid memory access.
+      - Fix zwp_linux_buffer_params_v1 resource leak after immediate buffer
+        creation and free XCB pixmap after PresentBuffer to prevent X server
+        resource exhaustion.
+      - Reduce display pipeline stalls by polling and picking the first free
+        buffer under DRI3, and use correct graphics usage bits for DMA buffer
+        alignment.
+    - OpenCL:
+      - Upgrade qcs615 OpenCL version to 3.0.
+      - Add CL_QCOM_NV21 image format support for A8X targets.
+      - Fix OpenCL CTS runtime program compilation issues.
+      - Fix GPU instruction validation errors during OpenCL program builds like
+        OpenCL SDK samples.
+      - Enable OpenCL perf_hint and priority_hint extensions for Hamoa and
+        Glymur.
 
   [ Agathe Porte ]
   * d/gbp.conf: drop upstream branch, there is none
