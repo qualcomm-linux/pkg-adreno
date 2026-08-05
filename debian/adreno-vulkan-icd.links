@@ -1,1 +1,1 @@
-/usr/lib/${DEB_HOST_MULTIARCH}/libvulkan_adreno.so.1.0.0 /usr/lib/${DEB_HOST_MULTIARCH}/libvulkan_adreno.so.1
+/usr/lib/${DEB_HOST_MULTIARCH}/adreno/libadreno-vulkan.so.1.0.0 /usr/lib/${DEB_HOST_MULTIARCH}/adreno/libadreno-vulkan.so.1
