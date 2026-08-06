@@ -53,7 +53,7 @@ Depends:
  ${shlibs:Depends},
 
 Package: adreno-opencl-dev
-Architecture: arm64
+Architecture: all
 Description: Qualcomm Adreno GPU userspace driver - OpenCL headers
  Adreno provides hardware acceleration through Collection of prebuilt
  User Mode libraries to support OpenCL APIs for Qualcomm Adreno GPUs.
