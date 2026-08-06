@@ -1,5 +1,3 @@
-adreno-common: package-name-doesnt-match-sonames libadreno-utils1 libgsl1 libllvm-glnext1 libllvm-qcom1 libllvm-qgl1 libq3dtools-adreno1 libq3dtools-esx1
-
 # We do not have control of which flags are used during build
 hardening-no-fortify-functions
 
@@ -9,3 +7,8 @@ spelling-error-in-binary
 # We do not want to tinker the big copyright notice
 # See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/40
 old-fsf-address-in-copyright-file
+
+# ldconfig trigger is activated even though libraries are shipped in a
+# dedicated adreno/ subdirectory not in ld.so.conf, so debhelper bug.
+# See https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=204975
+package-has-unnecessary-activation-of-ldconfig-trigger

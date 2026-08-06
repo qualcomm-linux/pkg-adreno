@@ -1,5 +1,4 @@
-#!/usr/bin/dh-exec
-qcom-adreno-common1/arm64/etc/profile.d/qcom-adreno-common-profile.sh => etc/profile.d/adreno-common-profile.sh
-qcom-adreno-common1/arm64/usr/lib/aarch64-linux-gnu/* usr/lib/aarch64-linux-gnu
-qcom-adreno-common1/arm64/usr/lib/environment.d/* usr/lib/environment.d
-qcom-adreno-common1/arm64/usr/lib/qcom-adreno-common/qcom-adreno-common-vars.sh => usr/lib/adreno-common/adreno-common-vars.sh
+adreno-common/arm64/etc/profile.d/adreno-common-profile.sh etc/profile.d
+adreno-common/arm64/usr/lib/aarch64-linux-gnu/adreno/* usr/lib/aarch64-linux-gnu/adreno
+adreno-common/arm64/usr/lib/environment.d/* usr/lib/environment.d
+adreno-common/arm64/usr/lib/adreno-common/adreno-common-vars.sh usr/lib/adreno-common

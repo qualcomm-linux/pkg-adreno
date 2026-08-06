@@ -1,11 +1,11 @@
 Source: adreno
-Section: libs
+Section: non-free/libs
 Maintainer: Maintainers.pkg-qcom-adreno <Maintainers.pkg-qcom-adreno@qualcomm.com>
 Uploaders:
  Agathe Porte <agathe.porte@oss.qualcomm.com>,
 Build-Depends:
  debhelper-compat (= 13),
- dh-exec,
+Build-Depends-Arch:
  libdrm-dev (>= 2.4.124-2),
  libgbm-dev (>= 25.0.7-2),
  libglib2.0-dev (>= 2.84.4-3~deb13u2),
@@ -53,14 +53,14 @@ Depends:
  ${shlibs:Depends},
 
 Package: adreno-opencl-dev
-Architecture: arm64
+Architecture: all
 Description: Qualcomm Adreno GPU userspace driver - OpenCL headers
  Adreno provides hardware acceleration through Collection of prebuilt
  User Mode libraries to support OpenCL APIs for Qualcomm Adreno GPUs.
  .
  This package provides the Qualcomm vendor extension headers
  (cl_ext_qcom.h) for OpenCL on Adreno.
-Section: libdevel
+Section: non-free/libdevel
 Depends:
  ocl-icd-opencl-dev,
  ${misc:Depends},
