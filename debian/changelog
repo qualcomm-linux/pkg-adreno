@@ -1,4 +1,4 @@
-adreno (1.877.3-0qli+staging1~) UNRELEASED; urgency=medium
+adreno (1.877.3-0qli+staging1) forky; urgency=medium
 
   [ Sai Sumanth Sadhula ]
   * New upstream release
@@ -42,7 +42,7 @@ adreno (1.877.3-0qli+staging1~) UNRELEASED; urgency=medium
   * d/gbp.conf: drop upstream branch, there is none
   * d/control: use B-D-A
 
- -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Tue, 28 Jul 2026 13:32:28 +0200
+ -- Debusine Action Bot <noreply@bot.invalid>  Thu, 06 Aug 2026 10:28:03 +0000
 
 adreno (1.855.5-0qli+staging2) forky; urgency=medium
 
