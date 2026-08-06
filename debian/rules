@@ -10,8 +10,8 @@ override_dh_auto_install:
 
 execute_after_dh_fixperms:
 	# See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/38
-	chmod -x debian/adreno-common/usr/lib/adreno-common/adreno-common-vars.sh
-	chmod -x debian/adreno-common/etc/profile.d/adreno-common-profile.sh
+	chmod -x adreno-common/usr/lib/adreno-common/adreno-common-vars.sh
+	chmod -x adreno-common/etc/profile.d/adreno-common-profile.sh
 
 override_dh_strip: ;
 
@@ -19,10 +19,12 @@ override_dh_dwz: ;
 
 maintainerclean:
 	rm -r \
-		adreno-common \
-		adreno-egl1 \
-		adreno-gles1 \
-		adreno-gles2 \
-		adreno-opencl-dev \
-		adreno-opencl-icd \
-		adreno-vulkan-icd
+		LICENSE.qcom-2 \
+		NOTICE \
+		adreno-common/ \
+		adreno-egl1/ \
+		adreno-gles1/ \
+		adreno-gles2/ \
+		adreno-opencl-dev/ \
+		adreno-opencl-icd/ \
+		adreno-vulkan-icd/
