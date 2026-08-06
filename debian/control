@@ -1,5 +1,5 @@
 Source: adreno
-Section: libs
+Section: non-free/libs
 Maintainer: Maintainers.pkg-qcom-adreno <Maintainers.pkg-qcom-adreno@qualcomm.com>
 Uploaders:
  Agathe Porte <agathe.porte@oss.qualcomm.com>,
@@ -61,7 +61,7 @@ Description: Qualcomm Adreno GPU userspace driver - OpenCL headers
  .
  This package provides the Qualcomm vendor extension headers
  (cl_ext_qcom.h) for OpenCL on Adreno.
-Section: libdevel
+Section: non-free/libdevel
 Depends:
  ocl-icd-opencl-dev,
  ${misc:Depends},
