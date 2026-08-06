@@ -1,3 +1,3 @@
-/usr/lib/${DEB_HOST_MULTIARCH}/libEGL_adreno.so.1.0.0 /usr/lib/${DEB_HOST_MULTIARCH}/libEGL_adreno.so.1
-/usr/lib/${DEB_HOST_MULTIARCH}/libeglSubDriverWayland.so.1.0.0 /usr/lib/${DEB_HOST_MULTIARCH}/libeglSubDriverWayland.so.1
-/usr/lib/${DEB_HOST_MULTIARCH}/libeglSubDriverX11.so.1.0.0 /usr/lib/${DEB_HOST_MULTIARCH}/libeglSubDriverX11.so.1
+/usr/lib/${DEB_HOST_MULTIARCH}/adreno/libadreno-EGL.so.1.0.0 /usr/lib/${DEB_HOST_MULTIARCH}/adreno/libadreno-EGL.so.1
+/usr/lib/${DEB_HOST_MULTIARCH}/adreno/libadreno-eglSubDriverWayland.so.1.0.0 /usr/lib/${DEB_HOST_MULTIARCH}/adreno/libadreno-eglSubDriverWayland.so.1
+/usr/lib/${DEB_HOST_MULTIARCH}/adreno/libadreno-eglSubDriverX11.so.1.0.0 /usr/lib/${DEB_HOST_MULTIARCH}/adreno/libadreno-eglSubDriverX11.so.1
