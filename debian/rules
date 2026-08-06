@@ -6,11 +6,6 @@ export DH_VERBOSE = 1
 	dh $@
 
 
-execute_after_dh_fixperms:
-	# See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/38
-	chmod -x adreno-common/usr/lib/adreno-common/adreno-common-vars.sh
-	chmod -x adreno-common/etc/profile.d/adreno-common-profile.sh
-
 override_dh_strip: ;
 
 override_dh_dwz: ;
