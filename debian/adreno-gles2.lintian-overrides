@@ -1,5 +1,3 @@
-adreno-gles2: package-name-doesnt-match-sonames libGLESv2-adreno2
-
 # Let’s ignore spelling errors for now
 spelling-error-in-binary *
 

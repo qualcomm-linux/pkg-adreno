@@ -1,5 +1,3 @@
-adreno-vulkan-icd: package-name-doesnt-match-sonames libvulkan-adreno1
-
 # Let’s ignore spelling mistakes for now
 spelling-error-in-binary
 
