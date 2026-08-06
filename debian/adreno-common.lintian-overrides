@@ -7,3 +7,8 @@ spelling-error-in-binary
 # We do not want to tinker the big copyright notice
 # See https://github.com/qualcomm-linux/pkg-qcom-adreno/issues/40
 old-fsf-address-in-copyright-file
+
+# ldconfig trigger is activated even though libraries are shipped in a
+# dedicated adreno/ subdirectory not in ld.so.conf, so debhelper bug.
+# See https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=204975
+package-has-unnecessary-activation-of-ldconfig-trigger
