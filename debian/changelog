@@ -1,7 +1,17 @@
 qcom-adreno (1.877.5-1) UNRELEASED; urgency=medium
 
   [ Maintainers.pkg-qcom-adreno ]
-  * WIP — update changelog before next release
+  * Improve platform capability reporting to expose only features supported by
+    the underlying hardware and operating environment.
+  * Enhance standards compliance and interoperability for memory scope and
+    atomic operation handling.
+  * Add OpenCL profiling support for DRM-based platforms to improve performance
+    analysis and debugging.
+  * Improve compatibility across DRM-based and non-Windows environments by
+    refining support for platform-specific compute and resource management
+    features.
+  * Improve GBM buffer import compatibility and interoperability across
+    graphics buffer sharing workflows.
 
   [ GitHub Service Bot ]
   * New upstream release (Artifactory tag: 260828)
