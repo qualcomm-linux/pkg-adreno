@@ -1,4 +1,4 @@
-qcom-adreno (1.877.5-1) UNRELEASED; urgency=medium
+qcom-adreno (1.877.5-1) resolute; urgency=medium
 
   [ Maintainers.pkg-qcom-adreno ]
   * Improve platform capability reporting to expose only features supported by
@@ -16,7 +16,7 @@ qcom-adreno (1.877.5-1) UNRELEASED; urgency=medium
   [ GitHub Service Bot ]
   * New upstream release (Artifactory tag: 260828)
 
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Fri, 28 Aug 2026 10:52:49 +0000
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Sat, 29 Aug 2026 01:05:58 +0000
 
 qcom-adreno (1.877.3-1) resolute; urgency=medium
 
