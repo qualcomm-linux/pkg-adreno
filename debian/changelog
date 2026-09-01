@@ -1,8 +1,9 @@
-adreno (1.877.5-0qli2~bpo13+1) UNRELEASED; urgency=medium
+adreno (1.877.5-0qli2~bpo13+1) trixie; urgency=medium
 
+  [ Robie Basak ]
   * Backport to qli trixie
 
- -- Robie Basak <robie.basak@oss.qualcomm.com>  Tue, 01 Sep 2026 10:29:24 +0100
+ -- Debusine Action Bot <noreply@bot.invalid>  Tue, 01 Sep 2026 09:32:01 +0000
 
 adreno (1.877.5-0qli2) forky; urgency=medium
 
