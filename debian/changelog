@@ -1,8 +1,9 @@
-adreno (1.877.5-0qli2~) UNRELEASED; urgency=medium
+adreno (1.877.5-0qli2) forky; urgency=medium
 
+  [ Debusine Action Bot ]
   * New upstream release.
 
- -- Debusine Action Bot <noreply@bot.invalid>  Thu, 06 Aug 2026 13:09:16 +0000
+ -- Debusine Action Bot <noreply@bot.invalid>  Tue, 01 Sep 2026 06:57:22 +0000
 
 adreno (1.877.3-0qli1) forky; urgency=medium
 
