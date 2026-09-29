@@ -1,4 +1,4 @@
-qcom-adreno (1.887.2-1) UNRELEASED; urgency=medium
+qcom-adreno (1.887.2-1) resolute; urgency=medium
 
   [ Maintainers.pkg-qcom-adreno ]
   * Add OpenCL profiling support to improve compute workload analysis and
@@ -44,7 +44,7 @@ qcom-adreno (1.887.2-1) UNRELEASED; urgency=medium
   [ GitHub Service Bot ]
   * New upstream release (Artifactory tag: 260929)
 
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Tue, 29 Sep 2026 13:08:18 +0000
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Tue, 29 Sep 2026 18:08:36 +0000
 
 qcom-adreno (1.877.5-1) resolute; urgency=medium
 
