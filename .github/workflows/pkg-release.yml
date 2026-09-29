@@ -19,9 +19,9 @@ permissions:
 
 jobs:
   Release:
-    uses: qualcomm-linux/qli-ci/.github/workflows/pkg-release-reusable-workflow.yml@dev/artifactory-push
+    uses: qualcomm-linux/qli-ci/.github/workflows/pkg-release-reusable-workflow.yml@main
     with:
-      qli-ci-ref: dev/artifactory-push
+      qli-ci-ref: main
       debian-branch: ${{ github.event.inputs.debian-branch }}
       test-run: ${{ vars.IS_TEST_PKG == 'true' }}
       debusine-parent-workspace: ${{ vars.DEBUSINE_PARENT_WORKSPACE }}
@@ -32,4 +32,3 @@ jobs:
       DEBUSINE_TOKEN: ${{ secrets.DEBUSINE_TOKEN }}
       DEBUSINE_RELEASE_TOKEN: ${{ secrets.DEBUSINE_RELEASE_TOKEN }}
       QSC_API_KEY: ${{ secrets.DEB_PKG_BOT_CI_QSC_TOKEN }}
-      ARTIFACTORY_ACCESS_TOKEN: ${{ secrets.ARTIFACTORY_TEST_TOKEN }}
