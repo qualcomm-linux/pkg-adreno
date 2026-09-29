@@ -1,7 +1,45 @@
 qcom-adreno (1.887.2-1) UNRELEASED; urgency=medium
 
   [ Maintainers.pkg-qcom-adreno ]
-  * WIP — update changelog before next release
+  * Add OpenCL profiling support to improve compute workload analysis and
+    performance debugging.
+  * Enhance standards compliance and cross-platform compatibility through
+    improvements to memory scope and atomic operation handling.
+  * Improve platform capability reporting for more accurate exposure of
+    supported graphics and compute features.
+  * Update graphics compiler components to improve compatibility with newer
+    toolchains and development environments.
+  * Enhance deployment flexibility through dynamic shader compiler component
+    loading.
+  * Improve support for multi-adapter configurations and heterogeneous system
+    environments.
+  * Enhance external buffer import handling and pixel format interoperability.
+  * Improve compatibility with DRM-based graphics environments.
+  * Improve build portability, maintainability, and overall driver
+    infrastructure.
+  * Deliver stability, reliability, and compatibility improvements across
+    OpenGL ES, Vulkan, OpenCL, compiler, and runtime components.
+  * Replace libllvm-*.so.* with new libraries and Enhance LLVM backend
+    integration to support flexible runtime selection of multiple compiler
+    backends.
+  * Add support for FIFO-based presentation mode to improve display
+    synchronization and application compatibility.
+  * Enhance display surface format selection to improve transparency handling
+    and compositor interoperability in graphical environments.
+  * Fix an issue preventing OpenGL ES applications from being correctly
+    detected and listed on SDP platforms.
+  * Improve application discovery reliability by correcting property parsing
+    and string termination handling during application enumeration.
+  * Fix a segmentation fault observed during graphics conformance testing by
+    properly reinitializing internal acceleration structure state during
+    rebuild operations.
+  * Add missing compiler memory barriers in AArch64 CRC32 assembly code to
+    improve correctness and runtime reliability.
+  * Improve Vulkan resource validation by preventing out-of-bounds accesses
+    during indirect descriptor processing, enhancing driver stability.
+  * Update library versioning and packaging behavior to align with platform
+    versioning requirements and improve compatibility, maintainability, and
+    deployment consistency across releases.
 
   [ GitHub Service Bot ]
   * New upstream release (Artifactory tag: 260929)
