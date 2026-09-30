@@ -1,6 +1,9 @@
 adreno (1.887.2-0qli1~) UNRELEASED; urgency=medium
 
-  * New upsteam release. 
+  [ Sumant Gupta ]
+
+  * New upstream release.
+  * d/adreno-common.links : replace libadreno-llvm*.so libraries with new ones
 
  -- Debusine Action Bot <noreply@bot.invalid>  Tue, 01 Sep 2026 09:21:38 +0000
 
