@@ -1,3 +1,12 @@
+adreno (1.887.2-0qli1) forky; urgency=medium
+
+  [ Sumant Gupta ]
+
+  * New upstream release.
+  * d/adreno-common.links : replace libadreno-llvm*.so libraries with new ones
+
+ -- Debusine Action Bot <noreply@bot.invalid>  Wed, 30 Sep 2026 11:55:08 +0000
+
 adreno (1.877.5-0qli2~bpo13+1) trixie; urgency=medium
 
   [ Robie Basak ]
