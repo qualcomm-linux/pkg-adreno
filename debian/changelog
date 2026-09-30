@@ -1,3 +1,9 @@
+adreno (1.887.2-0qli1~bpo13+1~) UNRELEASED; urgency=medium
+
+  * Rebuild for trixie.
+
+ -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Wed, 30 Sep 2026 14:10:38 +0200
+
 adreno (1.887.2-0qli1) forky; urgency=medium
 
   [ Sumant Gupta ]
