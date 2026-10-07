@@ -1,7 +1,11 @@
 qcom-adreno (1.887.3-1) UNRELEASED; urgency=medium
 
   [ Maintainers.pkg-qcom-adreno ]
-  * WIP — update changelog before next release
+  * Fix external memory import/export interoperability for DMA buffers.
+  * Resolve memory management and identifier consistency issues.
+  * Enable compressed memory support for shared buffers and swapchain images on Linux.
+  * Improve buffer import accuracy by using actual pixel dimensions and formats.
+  * Clean up platform-specific code paths and revert stability-impacting changes.
 
   [ GitHub Service Bot ]
   * New upstream release (Artifactory tag: 261007)
