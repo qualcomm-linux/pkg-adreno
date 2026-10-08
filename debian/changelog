@@ -1,3 +1,11 @@
+adreno (1.887.3-0qli1) forky; urgency=medium
+
+  [ Sumant Gupta ]
+
+  * New upstream release.
+
+ -- Debusine Action Bot <noreply@bot.invalid>  Thu, 08 Oct 2026 09:56:43 +0000
+
 adreno (1.887.2-0qli1~bpo13+1) trixie; urgency=medium
 
   [ Agathe Porte ]
