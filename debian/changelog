@@ -1,3 +1,13 @@
+adreno (1.887.3-0qli2) forky; urgency=medium
+
+  [ Sumant Gupta ]
+  * d/watch: scope artifact search to qsc_releases-cache repo.
+
+  [ Agathe Porte ]
+  * d/watch: drop comment
+
+ -- Debusine Action Bot <noreply@bot.invalid>  Fri, 09 Oct 2026 11:20:48 +0000
+
 adreno (1.887.3-0qli1~bpo13+1) trixie; urgency=medium
 
   [ Agathe Porte ]
