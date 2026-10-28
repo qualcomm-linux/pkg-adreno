@@ -1,4 +1,4 @@
-qcom-adreno (1.887.4-1) UNRELEASED; urgency=medium
+qcom-adreno (1.887.4-1) resolute; urgency=medium
 
   [ Maintainers.pkg-qcom-adreno ]
   * Preserve format modifier plane offsets for external memory imports.
@@ -9,7 +9,7 @@ qcom-adreno (1.887.4-1) UNRELEASED; urgency=medium
   [ GitHub Service Bot ]
   * New upstream release (Artifactory tag: 261027)
 
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Tue, 27 Oct 2026 20:11:37 +0000
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Wed, 28 Oct 2026 08:21:06 +0000
 
 qcom-adreno (1.887.3-1) resolute; urgency=medium
 
