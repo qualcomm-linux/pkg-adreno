@@ -67,7 +67,7 @@ Description: Qualcomm Adreno OpenGLESv1 User Mode libraries
  These drivers target Qualcomm Adreno GPUs.
 Section: libs
 Priority: optional
-Depends: ${shlibs:Depends}, ${misc:Depends}, , kgsl-dkms,
+Depends: ${shlibs:Depends}, ${misc:Depends},
  libgbm-msm (>= 1.2.5-5), libgles1 (>= 1.7.0),
  qcom-adreno-common1 (= ${binary:Version})
 Conflicts: adreno1
@@ -79,7 +79,7 @@ Description: Qualcomm Adreno OpenGLESv2 User Mode libraries
  These drivers target Qualcomm Adreno GPUs.
 Section: libs
 Priority: optional
-Depends: ${shlibs:Depends}, ${misc:Depends}, kgsl-dkms,
+Depends: ${shlibs:Depends}, ${misc:Depends},
  libgbm-msm (>= 1.2.5-5), libgles2 (>= 1.7.0),
  qcom-adreno-common1 (= ${binary:Version})
 Conflicts: adreno1
@@ -102,7 +102,7 @@ Description: Qualcomm Adreno EGL User Mode libraries
  These drivers target Qualcomm Adreno GPUs.
 Section: libs
 Priority: optional
-Depends: ${shlibs:Depends}, ${misc:Depends}, kgsl-dkms, libglvnd0 (>= 1.7.0),
+Depends: ${shlibs:Depends}, ${misc:Depends}, libglvnd0 (>= 1.7.0),
  libgbm-msm (>= 1.2.5-5), libegl1 (>= 1.7.0),
  qcom-adreno-common1 (= ${binary:Version}),
  qcom-adreno-gles1 (= ${binary:Version}),
@@ -126,7 +126,7 @@ Description: Qualcomm Adreno Vulkan User Mode libraries
  These drivers target Qualcomm Adreno GPUs.
 Section: libs
 Priority: optional
-Depends: ${shlibs:Depends}, ${misc:Depends}, kgsl-dkms,
+Depends: ${shlibs:Depends}, ${misc:Depends},
  libvulkan1 (>= 1.4.341.0-1), libgbm-msm (>= 1.2.5-5),
  qcom-adreno-common1 (= ${binary:Version})
 Conflicts: adreno1
