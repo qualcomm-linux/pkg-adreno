@@ -1,7 +1,10 @@
 qcom-adreno (1.887.4-1) UNRELEASED; urgency=medium
 
   [ Maintainers.pkg-qcom-adreno ]
-  * WIP — update changelog before next release
+  * Preserve format modifier plane offsets for external memory imports.
+  * Disable unsupported extension.
+  * Enable C523v2 chip ID support.
+  * Improve acceleration structure build reliability and host build stability.
 
   [ GitHub Service Bot ]
   * New upstream release (Artifactory tag: 261027)
