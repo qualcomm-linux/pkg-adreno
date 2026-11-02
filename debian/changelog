@@ -1,8 +1,9 @@
-adreno (1.887.4-0qli1~bpo13+1~) UNRELEASED; urgency=medium
+adreno (1.887.4-0qli1~bpo13+1) trixie; urgency=medium
 
+  [ Agathe Porte ]
   * Rebuild for trixie.
 
- -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Mon, 02 Nov 2026 13:07:05 +0000
+ -- Debusine Action Bot <noreply@bot.invalid>  Mon, 02 Nov 2026 13:08:28 +0000
 
 adreno (1.887.4-0qli1) forky; urgency=medium
 
