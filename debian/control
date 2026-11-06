@@ -45,7 +45,7 @@ Description: Qualcomm Adreno OpenCL User Mode (runtime library)
  .
  This package provides the runtime library.
 Depends:
- ocl-icd-libopencl1,
+ khronos-opencl-icd-libopencl1,
  adreno-common (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
@@ -60,7 +60,7 @@ Description: Qualcomm Adreno GPU userspace driver - OpenCL headers
  (cl_ext_qcom.h) for OpenCL on Adreno.
 Section: non-free/libdevel
 Depends:
- ocl-icd-opencl-dev,
+ khronos-opencl-icd-loader-dev,
  ${misc:Depends},
 
 Package: adreno-gles1
