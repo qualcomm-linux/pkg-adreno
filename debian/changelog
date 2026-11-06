@@ -1,7 +1,23 @@
 qcom-adreno (1.887.6-1) UNRELEASED; urgency=medium
 
   [ Maintainers.pkg-qcom-adreno ]
-  * WIP — update changelog before next release
+  * Propagate build configuration options as preprocessor definitions.
+  * Fix draw count calculation by using consistent buffer size units.
+  * Fix compiler handling of untyped pointer operations.
+  * Correct compiler library macro references.
+  * Add configurable shared library naming support.
+  * Improve swapchain image acquisition efficiency by avoiding unnecessary synchronization steps.
+  * Restrict debug-only functionality to debug builds.
+  * Improve rendering reliability in affected configurations.
+  * Disable a rendering optimization to ensure correct rendering behavior.
+  * Prevent exit-time crashes during EGL/GLES library unload cycles.
+  * Fix shader compilation issues involving untyped pointers on A8x GPUs
+  * Accept implicit-modifier DMA-BUF formats for Wayland swapchains.
+  * Avoid unmapping GBM/SBA-owned DMA-BUF CPU mappings.
+  * Prevent NULL dereferences on EGL_PLATFORM_DEVICE_EXT displays.
+  * Negotiate DMA-BUF formats and modifiers with the Wayland compositor.
+  * debian/control: remove kgsl-dkms runtime dependency.
+  * debian: Add missing debhelper token in scripts.
 
   [ GitHub Service Bot ]
   * New upstream release (Artifactory tag: 261105)
