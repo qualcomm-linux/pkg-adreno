@@ -1,4 +1,4 @@
-qcom-adreno (1.887.6-1) UNRELEASED; urgency=medium
+qcom-adreno (1.887.6-1) resolute; urgency=medium
 
   [ Maintainers.pkg-qcom-adreno ]
   * Propagate build configuration options as preprocessor definitions.
@@ -22,7 +22,7 @@ qcom-adreno (1.887.6-1) UNRELEASED; urgency=medium
   [ GitHub Service Bot ]
   * New upstream release (Artifactory tag: 261105)
 
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Fri, 06 Nov 2026 10:30:59 +0000
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Fri, 06 Nov 2026 16:46:56 +0000
 
 qcom-adreno (1.887.4-1) resolute; urgency=medium
 
