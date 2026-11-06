@@ -10,3 +10,6 @@ do
     fi
 done
 
+#DEBHELPER#
+
+exit 0
