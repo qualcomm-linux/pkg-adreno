@@ -1,3 +1,12 @@
+adreno (1.887.6-0qli1) forky; urgency=medium
+
+  [ Sumant Gupta ]
+  * New upstream release.
+  * d/control: replace ocl-icd dependencies with khronos-opencl-icd runtime
+    and loader packages.
+
+ -- Debusine Action Bot <noreply@bot.invalid>  Tue, 10 Nov 2026 11:12:50 +0000
+
 adreno (1.887.4-0qli1~bpo13+1) trixie; urgency=medium
 
   [ Agathe Porte ]
