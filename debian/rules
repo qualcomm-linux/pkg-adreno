@@ -9,6 +9,24 @@ override_dh_strip: ;
 
 override_dh_dwz: ;
 
+maintainerclean:
+	rm -r \
+		LICENSE.qcom-2 \
+		NOTICE \
+		qcom-adreno1/ \
+		qcom-adreno-cl1/ \
+		qcom-adreno-cl-dev/ \
+		qcom-adreno-common1/ \
+		qcom-adreno-common-dev/ \
+		qcom-adreno-dev/ \
+		qcom-adreno-egl1/ \
+		qcom-adreno-egl-dev/ \
+		qcom-adreno-gles1/ \
+		qcom-adreno-gles2/ \
+		qcom-adreno-gles-dev/ \
+		qcom-adreno-vulkan1/ \
+		qcom-adreno-vulkan-dev/
+
 DEB_VERSION = $(shell dpkg-parsechangelog -S 'Version' | cut -d ':' -f 2)
 execute_after_dh_builddeb:
 	:

@@ -1,0 +1,3 @@
+This package does not carry the upstream branches nor libraries. To generate
+them, you can call `origtargz` which will download the upstream release using
+uscan and extract it automatically.
