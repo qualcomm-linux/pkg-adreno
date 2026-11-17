@@ -1,7 +1,13 @@
 qcom-adreno (1.887.7-1) UNRELEASED; urgency=medium
 
   [ Maintainers.pkg-qcom-adreno ]
-  * WIP — update changelog before next release
+  * Improve Wayland graphics initialization by adding fallback support for the DRM primary device node.
+  * Improve DMA-BUF memory handling by ensuring heap file descriptors are safely initialized.
+  * Enhance runtime stability by keeping required graphics libraries loaded during application teardown.
+  * Improve instruction validation by adding a previously missing instruction to the validator initialization table.
+  * Update OpenCL image handling by removing an obsolete sampler-value restriction for read_image built-ins.
+  * Improve OpenCL program linking by preserving the correct failure state when clLinkProgram fails.
+  * Improve compiler robustness by safely reporting unresolved global values instead of failing unexpectedly.
 
   [ GitHub Service Bot ]
   * New upstream release (Artifactory tag: 261116)
