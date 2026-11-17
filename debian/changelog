@@ -1,4 +1,4 @@
-qcom-adreno (1.887.7-1) UNRELEASED; urgency=medium
+qcom-adreno (1.887.7-1) resolute; urgency=medium
 
   [ Maintainers.pkg-qcom-adreno ]
   * Improve Wayland graphics initialization by adding fallback support for the DRM primary device node.
@@ -12,7 +12,7 @@ qcom-adreno (1.887.7-1) UNRELEASED; urgency=medium
   [ GitHub Service Bot ]
   * New upstream release (Artifactory tag: 261116)
 
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Tue, 17 Nov 2026 07:58:33 +0000
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Tue, 17 Nov 2026 10:36:08 +0000
 
 qcom-adreno (1.887.6-1) resolute; urgency=medium
 
