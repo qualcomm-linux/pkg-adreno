@@ -1,9 +1,9 @@
-adreno (1.887.7-0qli1~) UNRELEASED; urgency=medium
+adreno (1.887.7-0qli1) forky; urgency=medium
 
   [ Sumant Gupta ]
   * New upstream release.
 
- -- Debusine Action Bot <noreply@bot.invalid>  Tue, 10 Nov 2026 11:19:05 +0000
+ -- Debusine Action Bot <noreply@bot.invalid>  Fri, 20 Nov 2026 13:38:28 +0000
 
 adreno (1.887.6-0qli1) forky; urgency=medium
 
