@@ -37,6 +37,16 @@ Conflicts: adreno-dev, libgsl-dev
 Provides: libgsl-dev (= 2.8)
 Replaces: libgsl-dev
 
+Package: qcom-adreno-kgsl
+Architecture: all
+Description: KGSL module configuration for Qualcomm Adreno User Mode libraries
+ Loads the msm kernel module with skip_gpu=1 and pulls in msm_kgsl, so the
+ KGSL driver rather than DRM msm drives Qualcomm Adreno GPUs. Required by
+ the EGL and Vulkan user-mode drivers.
+Section: misc
+Priority: optional
+Depends: ${misc:Depends}
+
 Package: qcom-adreno-cl1
 Architecture: arm64
 Description: Qualcomm Adreno OpenCL User Mode libraries
@@ -106,7 +116,8 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, libglvnd0 (>= 1.7.0),
  libgbm-msm (>= 1.2.5-5), libegl1 (>= 1.7.0),
  qcom-adreno-common1 (= ${binary:Version}),
  qcom-adreno-gles1 (= ${binary:Version}),
- qcom-adreno-gles2 (= ${binary:Version})
+ qcom-adreno-gles2 (= ${binary:Version}),
+ qcom-adreno-kgsl (= ${source:Version})
 Conflicts: adreno1
 
 Package: qcom-adreno-egl-dev
@@ -128,7 +139,8 @@ Section: libs
 Priority: optional
 Depends: ${shlibs:Depends}, ${misc:Depends},
  libvulkan1 (>= 1.4.341.0-1), libgbm-msm (>= 1.2.5-5),
- qcom-adreno-common1 (= ${binary:Version})
+ qcom-adreno-common1 (= ${binary:Version}),
+ qcom-adreno-kgsl (= ${source:Version})
 Conflicts: adreno1
 
 Package: qcom-adreno-vulkan-dev
